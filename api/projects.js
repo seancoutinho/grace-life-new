@@ -1,8 +1,8 @@
 import prj1 from '/public/images/project/greenhouse-start.jpeg'
 import prj2 from '/public/images/gallery/H68A0076.jpg'
 import prj3 from '/public/images/project/panashe-ceremony.png'
-import prj4 from '/public/images/project/child-protection.jpg'
-import prj5 from '/public/images/project/commemorative-events.jpg'
+import prj4 from '/public/images/project/workshops.jpg'
+import prj5 from '/public/images/project/commemorative.jpg'
 import prj6 from '/public/images/project/fundraising-gala.jpg'
 import prj7 from '/public/images/project/driptech.jpeg'
 
@@ -96,7 +96,7 @@ const Projects = [
   {
     id: '3',
     projectImg: prj3,
-    title: "University Scholarships",
+    title: "School Fees Scholarships",
     slug: 'scholarship-panashe-gotora',
     dec: 'Panashe Gotora has been a scholarship recipient under our program since 2018 and recently graduated from Midlands State University with a book prize in Business Management, specializing in Finance.',
     prImg1: primg1,
