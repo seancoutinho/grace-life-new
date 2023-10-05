@@ -3,5 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/404": "pages/404.js"
+  "/project/[slug]": "pages/project/[slug].js",
+  "/event-single/[slug]": "pages/event-single/[slug].js",
+  "/cause-single/[slug]": "pages/cause-single/[slug].js"
 }
