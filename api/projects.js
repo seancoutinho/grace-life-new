@@ -161,6 +161,14 @@ const Projects = [
       title5: "Join Us in Making a Difference",
       description5: "Child protection is a shared responsibility, and we invite you to join us in this critical endeavor. Your support, whether through donations, advocacy, or volunteering, can make a profound impact on the lives of our scholarship recipients. Stay connected with us for updates on our Child Protection Workshops and how you can get involved. Together, we can create safe communities where every child's well-being is a top priority. Join us in nurturing a brighter and safer future for all.",
     },
+    sideInfo: {
+      beneficiary:"Children of Zimbabwe",
+      location: 'Zimbabwe',
+      date: 'Year by year',
+      duration: 'all year',
+      tags: 'Child Protection, GBV, Empowerment' 
+
+    }
   },
   {
     id: '5',
@@ -184,6 +192,14 @@ const Projects = [
       title5: "How You Can Be a Part of Change",
       description5: "Our involvement in commemorative events is not just a reflection of our commitment; it's an invitation to you to join us in making a difference. Your support, whether through participation, donations, or advocacy, can amplify the impact of these events and create lasting change in our communities. Stay connected with us for updates on our commemorative events and how you can get involved. Together, we can continue to commemorate change, raise awareness, and work towards a brighter future for all. Join us in making every day an opportunity for positive transformation.",
     },
+    sideInfo: {
+      beneficiary:"General Public",
+      location: 'Zimbabwe',
+      date: 'Year by year',
+      duration: 'all year',
+      tags: 'Awareness Campaigns, Cancer, GBV, Domestic Violence' 
+
+    }
   },
   // {
   //   id: '6',

@@ -53,7 +53,7 @@ const projectDetailsPage = (props) => {
                                             </div>
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
-                                                    <li>Beneficiaries :<span>{projectDetails?.sideInfo?.beneficiary}</span></li>
+                                                    <li>Recipients :<span>{projectDetails?.sideInfo?.beneficiary}</span></li>
                                                     <li>Location :<span>{projectDetails?.sideInfo?.location}</span></li>
                                                     <li>Date :<span>{projectDetails?.sideInfo?.date}</span></li>
                                                     <li>Duration : <span>{projectDetails?.sideInfo?.duration}</span></li>
