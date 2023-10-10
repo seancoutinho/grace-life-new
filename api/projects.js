@@ -131,11 +131,11 @@ const Projects = [
       description5: "Panashe Gotora's story is just one of many success stories made possible through Gracelife Foundation's scholarship program. We are dedicated to providing education and opportunities to talented and deserving individuals like Panashe. Your support, whether through donations, mentorship, or advocacy, can make a profound impact on the lives of scholarship recipients. Together, we can light the path to success for countless young minds and empower them to achieve their dreams. Stay connected with us for more stories of triumph and transformation through education. Join us in making a difference, one scholarship at a time, and be a part of the journey to a brighter and more promising future for all.",
     },
     sideInfo: {
-      beneficiary:"Tichakunda Children's Home",
-      location: 'Stand No. 3334, Hatcliffe, Borrowdale',
-      date: '2022',
-      duration: 'All through winter',
-      tags: 'Foster, Care, Warmth' 
+      beneficiary:"Panashe Gotora",
+      location: 'Harare, Zimbabwe',
+      date: '2018',
+      duration: '4 years',
+      tags: 'Scholarships, Education, Empowerment' 
 
     }
   },
