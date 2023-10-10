@@ -69,8 +69,15 @@ const Projects = [
       description4: "The success of the greenhouse project at Chinyaradzo Children’s Home has inspired us to dream bigger and reach further. Our commitment to sustainable development and empowering marginalized communities remains unwavering. To achieve this, we are setting our sights on expanding our greenhouse initiatives.",
       title5: "How You Can Make a Difference",
       description5: "We recognize that our vision of building more greenhouses to transform lives and communities is an ambitious one. To turn this vision into a reality, we rely on the generosity and support of individuals like you. Your donations, no matter how small, can contribute to the growth of our greenhouse projects, enabling us to make an even more significant impact. In addition to donations, we are actively planning fundraising activities and campaigns to raise the necessary funds for building more greenhouses. We invite you to be a part of this journey, to stand with us in the fight against hunger, poverty, and the lack of opportunities. Together, we can continue to sow the seeds of hope, nurture sustainability, and empower communities through our greenhouse projects. Join us in making a positive change, one greenhouse at a time. Stay tuned for updates on our fundraising initiatives and how you can get involved. Together, we can create a greener, more self-reliant, and prosperous future for all.",
-
     },
+    sideInfo: {
+      beneficiary:' Chinyaradzo Children’s Home',
+      location: 'Highfields, Harare',
+      date: '2022',
+      duration: 'ongoing',
+      tags: 'Foster care, Food Security' 
+
+    }
   },
   {
     id: '2',

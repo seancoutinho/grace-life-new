@@ -51,22 +51,15 @@ const projectDetailsPage = (props) => {
                                                 <h1>{projectDetails?.fullDec?.title5}</h1>
                                                 <p>{projectDetails?.fullDec?.description5}</p>
                                             </div>
-                                            {/* <div className="wpo-project-single-content-des-right">
+                                            <div className="wpo-project-single-content-des-right">
                                                 <ul>
-                                                    <li>Beneficiaries: <span> Robert William</span></li>
-                                                    <li>Location :<span>7 Lake Street,London</span></li>
-                                                    <li>Date :<span>20 Apr 2021</span></li>
-                                                    <li>Duration : <span>3 Month</span></li>
-                                                    <li>Tag :<span>Charity, Wildlife</span></li>
+                                                    <li>Beneficiaries :<span>{projectDetails?.sideInfo?.beneficiary}</span></li>
+                                                    <li>Location :<span>{projectDetails?.sideInfo?.location}</span></li>
+                                                    <li>Date :<span>{projectDetails?.sideInfo?.date}</span></li>
+                                                    <li>Duration : <span>{projectDetails?.sideInfo?.duration}</span></li>
+                                                    <li>Tag :<span>{projectDetails?.sideInfo?.tags}</span></li>
                                                 </ul>
-                                            </div> */}
-                                        </div>
-                                        <div className="wpo-project-single-sub-img">
-                                            <ul>
-                                                <li><Image src={projectDetails?.prImg1} alt="" /></li>
-                                                <li><Image src={projectDetails?.prImg2} alt="" /></li>
-                                            </ul>
-
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -83,35 +76,32 @@ const projectDetailsPage = (props) => {
                                                     </div>
                                                     <div className="wpo-solutions-text">
                                                         <h2><Link onClick={ClickHandler} href='/service/[slug]' as={`/service/${service.slug}`}>{service.title}</Link></h2>
-                                                        <p>The lower-numbered purposes are better understood and practiced </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         ))}
                                     </div>
-
-                                    <p>{projectDetails?.benefits}</p>
                                     <p></p>
                                 </div>
                                 <div className="tag-share clearfix">
-                                    <div className="tag">
+                                    {/* <div className="tag">
                                         <ul>
                                             <li><Link onClick={ClickHandler} href="/project/Medical-Care">Charity</Link></li>
                                             <li><Link onClick={ClickHandler} href="/project/Medical-Care">Wildlife</Link></li>
                                             <li><Link onClick={ClickHandler} href="/project/Medical-Care">Nature</Link></li>
                                         </ul>
-                                    </div>
-                                    <div className="share">
+                                    </div> */}
+                                    {/* <div className="share">
                                         <span>Share: </span>
                                         <ul>
-                                            <li><Link onClick={ClickHandler} href="/project/Medical-Care"><i className="ti-facebook"></i></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/project/Medical-Care"><i className="ti-twitter-alt"></i></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/project/Medical-Care"><i className="ti-linkedin"></i></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/project/Medical-Care"><i className="ti-instagram"></i></Link></li>
+                                            <li><Link onClick={ClickHandler} href="/project/greenhouse-project"><i className="ti-facebook"></i></Link></li>
+                                            <li><Link onClick={ClickHandler} href="/project/greenhouse-project"><i className="ti-twitter-alt"></i></Link></li>
+                                            <li><Link onClick={ClickHandler} href="/project/greenhouse-project"><i className="ti-linkedin"></i></Link></li>
+                                            <li><Link onClick={ClickHandler} href="/project/greenhouse-project"><i className="ti-instagram"></i></Link></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <div className="more-posts">
+                                {/* <div className="more-posts">
                                     <div className="previous-post">
                                         <Link onClick={ClickHandler} href="/project/School-In-Uganda">
                                             <div className="post-img">
@@ -134,7 +124,7 @@ const projectDetailsPage = (props) => {
                                             </div>
                                         </Link>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
