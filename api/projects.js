@@ -99,6 +99,14 @@ const Projects = [
       title5: "How Can You Join Us?",
       description5: "The Blanket Drive Program is a testament to the power of collective giving and compassion. We believe that even a small act of kindness can make a significant impact on someone's life. As we continue this heartwarming tradition, we invite you to join us in spreading warmth and love to those less fortunate. Your contributions, whether in the form of blankets, toiletries, or donations, can make a world of difference. Together, we can ensure that vulnerable communities have the comfort and support they need during the cold winter months. Stay connected with us for updates on our initiatives and future visits. Together, we can keep the flame of compassion burning, warming hearts and homes across our communities. Join us in making a lasting difference through the Blanket Drive Program.",
     },
+    sideInfo: {
+      beneficiary:"Tichakunda Children's Home",
+      location: 'Stand No. 3334, Hatcliffe, Borrowdale',
+      date: '2022',
+      duration: 'All through winter',
+      tags: 'Foster, Care, Warmth' 
+
+    }
   },
   {
     id: '3',
