@@ -64,7 +64,7 @@ const projectDetailsPage = (props) => {
                                     </div>
                                 </div>
                                 <div className="wpo-solutions-section">
-                                    <h2>Benefits of Such Projects</h2>
+                                    <h2>Benefits of These Projects</h2>
                                     <div className="row">
                                         {Services.slice(1, 4).map((service, Sitem) => (
                                             <div className="col-lg-4 col-md-6 col-12" key={Sitem}>
