@@ -72,8 +72,8 @@ const EventSidebar = (props) => {
                     </ul>
                 </div>
                 <div className="wpo-contact-widget widget">
-                    <h2>How We Can <br /> Help You!</h2>
-                    <p>labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <h2>How You Can <br /> Be A Part of Our Events!</h2>
+                    <p>You are one call, or one email away to contribute to this event hosted by Gracelife. Click the Contact Us button below and reach out to us using your preferred means. </p>
                     <Link href="/contact">Contact Us</Link>
                 </div>
             </div>
