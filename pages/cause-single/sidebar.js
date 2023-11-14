@@ -64,19 +64,15 @@ const CauseSidebar = (props) => {
                     <h3>Tags</h3>
                     <ul>
                         <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Charity</Link></li>
-                        <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Planning</Link></li>
                         <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Helping</Link></li>
                         <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Education</Link></li>
-                        <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Medical</Link></li>
-                        <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Wildlife</Link></li>
                         <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Donation</Link></li>
                         <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">Help</Link></li>
-                        <li><Link onClick={ClickHandler} href="/cause-single/Poor-Children">World Pandamic</Link></li>
                     </ul>
                 </div>
                 <div className="wpo-contact-widget widget">
                     <h2>How We Can <br/> Help You!</h2>
-                    <p>labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <p>If you are, or you know a person in need of a scholarship and meets the requirements to be awarded a Gracelife Foundation scholarship, please contact us beloqw </p>
                     <Link href="/contact">Contact Us</Link>
             </div>
             </div>

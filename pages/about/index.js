@@ -20,11 +20,6 @@ const AboutPage =() => {
             <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
             <VideoSec/>
             <Service Fclass={'wpo-features-section-s2'}/>
-            <AboutS2/>
-            <FunFact/>
-            <CauseSection/>
-            <TeamSection/>
-            <PartnerSection tNone={'title-none'}/>
             <Footer/>
             <Scrollbar/>
         </Fragment>
