@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import MobileMenu from '../../components/MobileMenu'
 import Image from 'next/image'
+import Logo from '/public/images/gracelife-logo.png'
 
 export default class Header extends Component {
 
@@ -112,24 +113,11 @@ export default class Header extends Component {
                                         <div className="close-form">
                                             <Link onClick={ClickHandler} className="theme-btn" href="/donate">Donate Now</Link>
                                         </div>
-                                        <div className="header-search-form-wrapper">
-                                            <div className="cart-search-contact">
-                                                <button onClick={this.searchHandler} className="search-toggle-btn"><i
-                                                    className={`${isSearchShow ? 'ti-close' : 'ti-search'}`}></i></button>
-                                                <div className={`header-search-form ${isSearchShow ? 'header-search-content-toggle' : ''}`}>
-                                                    <form onSubmit={SubmitHandler}>
-                                                        <div>
-                                                            <input type="text" className="form-control"
-                                                                placeholder="Search here..." />
-                                                            <button type="submit"><i
-                                                                className="fi flaticon-search"></i></button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
+                                    
                                 </div>
+                                
                             </div>
                         </div>
                     </nav>

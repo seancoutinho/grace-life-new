@@ -41,7 +41,7 @@ const CauseSidebar = (props) => {
                                 </div>
                                 <div className="details">
                                     <h4><Link onClick={ClickHandler} href="/cause-single/[slug]"  as={`/cause-single/${Cause.slug}`}>{Cause.cTitle}</Link></h4>
-                                    <span className="date">19 Jun 2021 </span>
+                                    <span className="date">21 Aug 2023 </span>
                                 </div>
                             </div>
                         ))}
