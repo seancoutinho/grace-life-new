@@ -21,6 +21,8 @@ const Contactpage = () => {
                                         <div className="office-info-text">
                                             <h2>Address</h2>
                                             <p>20 Ray Amm Rd, Eastlea, Harare</p>
+                                            <p> Zimbabwe </p>
+
                                         </div>
                                     </div>
                                 </div> 
@@ -34,6 +36,7 @@ const Contactpage = () => {
                                         <div className="office-info-text">
                                             <h2>Email Us</h2>
                                             <p>info@gracelifefoundation.com</p>
+                                            <p>rejoice.utseya@gracelifefoundation.com</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -47,9 +50,11 @@ const Contactpage = () => {
                                         <div className="office-info-text">
                                             <h2>Call Now</h2>
                                             <p>+263 8677008143</p>
+                                            <p>+263 73 422 3234</p>
                                         </div>
                                     </div>
                                 </div> 
+                                
                             </div>
                         </div>
                         <div className="wpo-contact-title">
