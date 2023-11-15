@@ -72,7 +72,7 @@ const CauseSidebar = (props) => {
                 </div>
                 <div className="wpo-contact-widget widget">
                     <h2>How We Can <br/> Help You!</h2>
-                    <p>If you are, or you know a person in need of a scholarship and meets the requirements to be awarded a Gracelife Foundation scholarship, please contact us beloqw </p>
+                    <p>If you are, or you know a person in need of a scholarship and meets the requirements to be awarded a Gracelife Foundation scholarship, please contact us below </p>
                     <Link href="/contact">Contact Us</Link>
             </div>
             </div>
