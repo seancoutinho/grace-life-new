@@ -105,6 +105,8 @@ export default class Header extends Component {
                                                 </ul>
                                             </li> */}
                                             <li><Link onClick={ClickHandler} href="/contact">Contact</Link></li>
+                                            <li><Link onClick={ClickHandler} href="/about">Who We Are</Link></li>
+
                                         </ul>
                                     </div>
                                 </div>
