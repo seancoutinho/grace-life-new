@@ -56,7 +56,7 @@ export default class Header extends Component {
                                             <li className="menu-item-has-children">
                                                 <Link href="/cause">Projects</Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link onClick={ClickHandler} href="/cause-single/green-house-donations">Rugare Community Greenhouse</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/cause-single/green-house-donations">Community Greenhouse Projects</Link></li>
                                                     <li><Link onClick={ClickHandler} href="/cause-single/dandamire-clinic-maternity-ward">Dandamera Clinic Maternity Ward</Link></li>
                                                     <li><Link onClick={ClickHandler} href="/cause-single/scholarships-fees">School Fees Scholarships</Link></li>
                                                 </ul>
