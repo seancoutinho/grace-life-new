@@ -33,7 +33,7 @@ const BlogSidebar = (props) => {
                     <div className="img-holder">
                         <Image src={BlogDetails?.authorImg} alt=""/>
                     </div>
-                    <h4>{BlogDetails?.author1}</h4>
+                    <h4>{BlogDetails?.author}</h4>
                     <p>{BlogDetails?.authorDescription}</p>
                     <div className="social">
                         <ul className="clearfix">
