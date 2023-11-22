@@ -20,11 +20,10 @@ const BlogList = (props) => {
                 <div className="row">
                     <div className={`col col-lg-8 col-12 ${props.blRight}`}>
                         <div className="wpo-blog-content">
-                            {blogs.slice(0,4).map((blog, bitem) => (
+                            {blogs.slice(0,3).map((blog, bitem) => (
                                 <div className={`post  ${blog.blClass}`}key={bitem}>
                                     <div className="entry-media video-holder">
                                         <Image src={blog.blogSingleImg} alt=""/>
-                                        <VideoModal/>
                                     </div>
                                     <div className="entry-meta">
                                         <ul>
@@ -44,15 +43,14 @@ const BlogList = (props) => {
                             <div className="pagination-wrapper pagination-wrapper-left">
                                 <ul className="pg-pagination">
                                     <li>
-                                        <Link href="/blog-left-sidebar" aria-label="Previous">
+                                        <Link href="/" aria-label="Previous">
                                             <i className="fi ti-angle-left"></i>
                                         </Link>
                                     </li>
                                     <li className="active"><Link href="/blog-left-sidebar">1</Link></li>
-                                    <li><Link href="/blog-left-sidebar">2</Link></li>
-                                    <li><Link href="/blog-left-sidebar">3</Link></li>
+
                                     <li>
-                                        <Link href="/blog-left-sidebar" aria-label="Next">
+                                        <Link href="/" aria-label="Next">
                                             <i className="fi ti-angle-right"></i>
                                         </Link>
                                     </li>

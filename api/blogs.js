@@ -20,8 +20,8 @@ import blogImg13 from "/public/images/blog/img-13.jpg";
 import blogImg14 from "/public/images/blog/img-14.jpg";
 import blogImg15 from "/public/images/blog/img-15.jpg";
 
-import blogAvaterImg1 from "/public/images/blog/blog-avater/img-1.jpg";
-import blogAvaterImg2 from "/public/images/blog/blog-avater/img-2.jpg";
+import blogAvaterImg1 from "/public/images/blog/blog-avater/rejoice-utseya.jpeg";
+import blogAvaterImg2 from "/public/images/blog/blog-avater/sean-coutinho.jpg";
 import blogAvaterImg3 from "/public/images/blog/blog-avater/Munyaradzi-Makosa.jpg";
 
 import blogSingleImg1 from "/public/images/blog/1.jpg";
@@ -89,6 +89,7 @@ const blogs = [
         author: 'Sean Coutinho',
         authorTitle:'volunteer',
         authorImg:blogAvaterImg2,
+        authorDescription: 'Hi everyone, my name is Sean and I am a software developer here at Gracelife Foundation!',
         create_at: '20 NOV,23',
         blogBtmImage1: blogBottomImage3,
         blogBtmImage2: blogBottomImage4,
