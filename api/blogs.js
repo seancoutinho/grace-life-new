@@ -68,6 +68,7 @@ const blogs = [
         author: 'Rejoice Utseya',
         authorTitle:'Gracelife Foundation Manager',
         authorImg:blogAvaterImg1,
+        authorDescription: "Social Worker with vast experience in Child Protection Programming and Community Health Programming.",
         create_at: '22 NOV, 23',
         blogBtmImage1: blogBottomImage1,
         blogBtmImage2: blogBottomImage2,
