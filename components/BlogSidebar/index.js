@@ -37,10 +37,10 @@ const BlogSidebar = (props) => {
                     <p>{BlogDetails?.authorDescription}</p>
                     <div className="social">
                         <ul className="clearfix">
-                            <li><Link onClick={ClickHandler} href="/blog-single/Great-Satisfiction"><i className="ti-facebook"></i></Link></li>
-                            <li><Link onClick={ClickHandler} href="/blog-single/Great-Satisfiction"><i className="ti-twitter-alt"></i></Link></li>
-                            <li><Link onClick={ClickHandler} href="/blog-single/Great-Satisfiction"><i className="ti-linkedin"></i></Link></li>
-                            <li><Link onClick={ClickHandler} href="/blog-single/Great-Satisfiction"><i className="ti-pinterest"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-facebook"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-twitter-alt"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-linkedin"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-pinterest"></i></Link></li>
                         </ul>
                     </div>
                     <div className="aw-shape">

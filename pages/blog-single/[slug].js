@@ -93,9 +93,7 @@ const BlogSingle = (props) => {
                                 </div> */}
 
                                 <div className="author-box">
-                                    <div className="author-avatar">
-                                        <Link href="/" target="_blank"><Image src={blog6} alt="" /></Link>
-                                    </div>
+                                
                                     <div className="author-content">
                                         <Link href="/" className="author-name">Author: {BlogDetails?.author}</Link>
                                         <p>{BlogDetails?.aboutAuthor}</p>
