@@ -48,23 +48,29 @@ const BlogSingle = (props) => {
                                         </ul>
                                     </div>
                                     <h2>{BlogDetails?.title}</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
-                                    <blockquote>
-                                        Combined with a handful of model sentence structures, generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                    </blockquote>
-                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,</p>
-
+                                    <p>{BlogDetails?.description}</p>
+                                    {BlogDetails?.quote && (
+                                        <blockquote>
+                                            {BlogDetails?.quote}
+                                        </blockquote>
+                                    )}
+                                    <p>{BlogDetails?.description2}</p>
+                                    <p>{BlogDetails?.description3}</p>
+                                    <p>{BlogDetails?.description4}</p>
+                                    <p>{BlogDetails?.description5}</p>
+                                    <p>{BlogDetails?.description6}</p>
+                                    <p>{BlogDetails?.description7}</p>
                                     <div className="gallery">
                                         <div>
-                                            <Image src={gl1} alt="" />
+                                            <Image src={BlogDetails?.blogBtmImage1} alt="" />
                                         </div>
                                         <div>
-                                            <Image src={gl2} alt="" />
+                                            <Image src={BlogDetails?.blogBtmImage2} alt="" />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="tag-share clearfix">
+                                {/* <div className="tag-share clearfix">
                                     <div className="tag">
                                         <span>Share: </span>
                                         <ul>
@@ -84,15 +90,15 @@ const BlogSingle = (props) => {
                                             <li><Link href="/">pinterest</Link></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="author-box">
                                     <div className="author-avatar">
                                         <Link href="/" target="_blank"><Image src={blog6} alt="" /></Link>
                                     </div>
                                     <div className="author-content">
-                                        <Link href="/" className="author-name">Author: Jenny Watson</Link>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                                        <Link href="/" className="author-name">Author: {BlogDetails?.author}</Link>
+                                        <p>{BlogDetails?.aboutAuthor}</p>
                                         <div className="socials">
                                             <ul className="social-link">
                                                 <li><Link href="/"><i className="ti-facebook"></i></Link></li>
@@ -108,18 +114,16 @@ const BlogSingle = (props) => {
                                     <div className="previous-post">
                                         <Link href="/">
                                             <span className="post-control-link">Previous Post</span>
-                                            <span className="post-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</span>
                                         </Link>
                                     </div>
                                     <div className="next-post">
                                         <Link href="/">
                                             <span className="post-control-link">Next Post</span>
-                                            <span className="post-name">Dignissimos ducimus qui blanditiis praesentiu deleniti atque corrupti quos dolores</span>
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="comments-area">
+                                {/* <div className="comments-area">
                                     <div className="comments-section">
                                         <h3 className="comments-title">Comments</h3>
                                         <ol className="comments">
@@ -237,7 +241,7 @@ const BlogSingle = (props) => {
                                             </div>
                                         </form>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <BlogSidebar blLeft={props.blLeft} />

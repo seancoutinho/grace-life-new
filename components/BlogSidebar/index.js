@@ -1,13 +1,19 @@
 import React from 'react';
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import blogs from '../../api/blogs'
 import Services from '../../api/service';
 import Projects from '../../api/projects'
 import about from '/public/images/blog/about-widget.jpg'
 import Image from 'next/image';
+import blogAvaterImg3 from "/public/images/blog/blog-avater/Munyaradzi-Makosa.jpg";
 
 
 const BlogSidebar = (props) => {
+
+    const router = useRouter()
+    const BlogDetails = blogs.find(item => item.slug === router.query.slug)
+
 
     const SubmitHandler = (e) =>{
        e.preventDefault()
@@ -22,10 +28,10 @@ const BlogSidebar = (props) => {
             <div className="blog-sidebar">
                 <div className="widget about-widget">
                     <div className="img-holder">
-                        <Image src={about} alt=""/>
+                        <Image src={blogAvaterImg3} alt=""/>
                     </div>
-                    <h4>Jenny Watson</h4>
-                    <p>Hi! beautiful people. I`m an authtor of this blog. Read our post - stay with us</p>
+                    <h4>{BlogDetails?.author}</h4>
+                    <p>{BlogDetails?.authorDescription}</p>
                     <div className="social">
                         <ul className="clearfix">
                             <li><Link onClick={ClickHandler} href="/blog-single/Great-Satisfiction"><i className="ti-facebook"></i></Link></li>
@@ -44,14 +50,6 @@ const BlogSidebar = (props) => {
                             <button type="submit"><i className="ti-search"></i></button>
                         </div>
                     </form>
-                </div>
-                <div className="widget category-widget">
-                    <h3>Categories</h3>
-                    <ul>
-                        {Services.slice(0,6).map((service, Sitem) => (
-                            <li key={Sitem}><Link onClick={ClickHandler} href="/service/[slug]" as={`/service/${service.slug}`}>{service.title} <span>{service.id}</span></Link></li>
-                        ))}
-                    </ul>
                 </div>
                 <div className="widget recent-post-widget">
                     <h3>Related Posts</h3>
@@ -100,8 +98,8 @@ const BlogSidebar = (props) => {
                     </ul>
                 </div>
                 <div className="wpo-contact-widget widget">
-                        <h2>How We Can <br/> Help You!</h2>
-                        <p>labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        <h2>Want to Contribute to Our  <br/> Blogs?</h2>
+                        <p>Contact our administration team to submit an article and have it posted here on our site!</p>
                         <Link onClick={ClickHandler} href="/contact">Contact Us</Link>
                 </div>
             </div>
