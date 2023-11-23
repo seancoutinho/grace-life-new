@@ -19,7 +19,6 @@ const BlogSection = (props) => {
                             <span>Our Blog</span>
                             <h2>Latest News & Updates</h2>
                             <p>Discover captivating stories from our team of expert writers, bringing you the latest news and updates with creativity and insight.</p>
-
                         </div>
                     </div>
                 </div>

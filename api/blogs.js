@@ -55,7 +55,7 @@ import blogBottomImage6 from '/public/images/blog/bottom-img-6.jpg'
 const blogs = [
     {
         id: '1',
-        title: 'Zimbabwe Leads In Cancer Morbidity And Mortality Rates',
+        title: `Zimbabwe Leads In Cancer Morbidity And Mortality Rates.`,
         slug:'zimbabwe-leads-in-cancer-mobidity-and-mortality-rates',
         screens: blogImg1,
         miniDescription: 'In 2021, Zimbabwe found itself grappling with a significant health challenge as per data from the Global Cancer Observatory (GLOBOCAN). Shockingly, the nation reported a staggering 16,083 new cases of cancer, and the grim reality of 10,676 lives lost due to this formidable disease. The prevalent types of cancers in the country included those affecting the cervix, breast, and prostate.',
