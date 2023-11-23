@@ -17,9 +17,9 @@ const BlogSection = (props) => {
                     <div className="col-lg-6">
                         <div className="wpo-section-title">
                             <span>Our Blog</span>
-                            <h2>Latest News & Update</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form,</p>
+                            <h2>Latest News & Updates</h2>
+                            <p>Discover captivating stories from our team of expert writers, bringing you the latest news and updates with creativity and insight.</p>
+
                         </div>
                     </div>
                 </div>
