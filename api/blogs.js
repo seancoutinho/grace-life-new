@@ -50,6 +50,9 @@ import blogBottomImage3 from '/public/images/blog/bottom-img-3.jpg'
 import blogBottomImage4 from '/public/images/blog/bottom-img-4.jpg'
 import blogBottomImage5 from '/public/images/blog/bottom-img-5.jpg'
 import blogBottomImage6 from '/public/images/blog/bottom-img-6.jpg'
+import blogBottomImage7 from '/public/images/blog/bottom-img-7.jpg'
+import blogBottomImage8 from '/public/images/blog/bottom-img-8.jpg'
+
 
 
 const blogs = [
@@ -123,16 +126,24 @@ const blogs = [
     },
     {
         id: '4',
-        title: 'Let’s Save The Rare Birds From Hunting.',
-        slug:'Rare-Birds',
+        title: 'Child Marriages in Zimabwe, A Thorn in The Flesh',
+        slug:'child-mariages-in-zimbabwe-a-thorn-in-the-flesh',
         screens: blogImg4,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
+        description: 'In March 2022, Zimbabwe passed the long awaited Marriage Bill, which outlaws child marriages in the country, a development that was widely applauded as a victory. However, child marriages remain predominant in Zimbabwe despite all the statutory instruments in Zimbabwe that shun child marriages',
+        description2: "According to Zimbabwe National Statistics Agency (Zimstat), 33.7% of girls under the age of 18 are married, while 2% of boys get married before reaching the age of 18. Child marriage in Zimbabwe is a complex and multifarious issue that stems from the structural, economic and religious factors, thus many factors interact to place a girl at risk of marriage. These factors include but not limited to poverty, social norms that that regard girls and women as the inferior to their male counterparts, religious practices that condone child marriages and the lack of harmonisation among the statutory instruments with regards to the definition of a child.",
+        description3: "One can note that the Zimbabwean Constitution defines ‘a child’ as anyone below the age of 18 years of Age. The Children’s Act, Chapter 5:06 define ‘a child’ as anyone below the age of 16 years of age. ‘A minor’ in the same Act is defined as anyone below the age of 18 years. When dealing with the crime of having sex with ‘a young person’, the Criminal Law and Codification Act defines ‘a young person’ as anyone who is below the age of 16. These inconsistencies between these various laws which existed even before the [2013] Constitution continue to exist and its making it difficult for law enforcements agents to deal with child marriage cases especially those that involve girls of 16 and 17 years.",
+        description4: "Population Council (2009) puts across that child marriage predominantly affects girls who live in poverty and in rural areas. Girls from the poorest of the households were more than 4 times as likely to be married before age 18 than girls from the richest of the households. Experiences in most African countries shows that there is a strong nexus between socio-economic status and vulnerability as the poorest are those who are also most likely to be out of school, married, and/or forced into non-marital sexual relations.",
+        description5: "Religion is also a driver of child marriage in Zimbabwe. For instance, in the apostolic faith, religion combines with traditional culture, and girls are often encouraged to marry much older men at a very young age and religion is a powerful organizing force in Zimbabwe. Studies have shown how religious ideologies have been used to justify abuse of women and children.",
+        description6: "Child marriage directly impends the health and well-being of girls such as complications from pregnancy and childbirth as the main cause of death among adolescent girls aged 15-19 in developing countries. Child marriage often ends a girl’s education forever. Girls who marry young are often expected to take on responsibilities and roles at home that are prioritized over attending school. A lack of education limits girls’ choices and opportunities throughout their lives. Married girls and young women between the ages of 15 and 19 with low levels of education are at a much greater risk of domestic and sexual violence from their spouses than older and more educated women. Research has shown spousal age difference, typical of child marriage, as a significant risk factor associated with violence and sexual abuse against girls.",
+        description7: "Therefore, there is need for concerted efforts between government and developmental organisations to empower girls and women so as to curb child marriages and empowerment for girls usually comes in the form of ensuring girls are supported with their educational requirements and are retained in school. There is need to positively change the perception of the role of girls and women in society through continuous awareness raising focusing on gender equity and equality. Government should expedite the harmonisation of legal instruments that define children in Zimbabwe as that inconsistency usually makes it difficult to bring perpetrators of child marriages to book. There is also that need to continue conscientizing the Apostolic sects in Zimbabwe about the dangers of child marriages and to enforce the law accordingly when child marriages are reported among this sect regardless of status.",
+        author: 'Rejoice Utseya',
+        authorTitle:'Gracelife Foundation Manager',
         authorImg:blogAvaterImg1,
-        create_at: '14 AUG,21',
+        create_at: '24 NOV,23',
+        blogBtmImage1: blogBottomImage7,
+        blogBtmImage2: blogBottomImage8,
         blogSingleImg:blogSingleImg4, 
-        comment:'35',
+        comment:'0',
         blClass:'format-standard-image',
     },
     {

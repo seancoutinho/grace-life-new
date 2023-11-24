@@ -57,7 +57,7 @@ const BlogSidebar = (props) => {
                 <div className="widget recent-post-widget">
                     <h3>Related Posts</h3>
                     <div className="posts">
-                        {blogs.slice(0, 3).map((blog, Bitem) => (
+                        {blogs.slice(0, 4).map((blog, Bitem) => (
                             <div className="post" key={Bitem}>
                                 <div className="img-holder">
                                     <Image src={blog.screens} alt="" />
