@@ -138,6 +138,7 @@ const blogs = [
         description7: "Therefore, there is need for concerted efforts between government and developmental organisations to empower girls and women so as to curb child marriages and empowerment for girls usually comes in the form of ensuring girls are supported with their educational requirements and are retained in school. There is need to positively change the perception of the role of girls and women in society through continuous awareness raising focusing on gender equity and equality. Government should expedite the harmonisation of legal instruments that define children in Zimbabwe as that inconsistency usually makes it difficult to bring perpetrators of child marriages to book. There is also that need to continue conscientizing the Apostolic sects in Zimbabwe about the dangers of child marriages and to enforce the law accordingly when child marriages are reported among this sect regardless of status.",
         author: 'Rejoice Utseya',
         authorTitle:'Gracelife Foundation Manager',
+        authorDescription: "Social Worker with vast experience in Child Protection Programming and Community Health Programming.",
         authorImg:blogAvaterImg1,
         create_at: '24 NOV,23',
         blogBtmImage1: blogBottomImage7,

@@ -46,14 +46,6 @@ const BlogSidebar = (props) => {
                     <div className="aw-shape">
                     </div>
                 </div>
-                <div className="widget search-widget">
-                    <form onSubmit={SubmitHandler}>
-                        <div>
-                            <input type="text" className="form-control" placeholder="Search Post.."/>
-                            <button type="submit"><i className="ti-search"></i></button>
-                        </div>
-                    </form>
-                </div>
                 <div className="widget recent-post-widget">
                     <h3>Related Posts</h3>
                     <div className="posts">

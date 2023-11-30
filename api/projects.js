@@ -1,7 +1,7 @@
 import prj1 from '/public/images/project/greenhouse-start.jpeg'
 import prj2 from '/public/images/gallery/H68A0076.jpg'
 import prj3 from '/public/images/project/panashe-ceremony.png'
-import prj4 from '/public/images/project/workshops.jpg'
+import prj4 from '/public/images/project/dandamera.png'
 import prj5 from '/public/images/project/commemorative.jpg'
 import prj6 from '/public/images/project/fundraising-gala.jpg'
 import prj7 from '/public/images/project/driptech.jpeg'
@@ -32,8 +32,8 @@ import prontj4 from '/public/images/project/21.jpg'
 import prontj5 from '/public/images/project/22.jpg'
 import prontj6 from '/public/images/project/18.jpg'
 
-import primg1 from '/public/images/project-single/1.jpg'
-import primg2 from '/public/images/project-single/3.jpg'
+import primg1 from '/public/images/project-single/1.png'
+import primg2 from '/public/images/project-single/3.png'
 import primg7 from '/public/images/project-single/7.jpeg'
 import primg8 from '/public/images/project-single/8.jpeg'
 
@@ -142,31 +142,31 @@ const Projects = [
   {
     id: '4',
     projectImg: prj4,
-    title: "Child Protection Workshops",
-    slug: 'child-protection-workshops',
-    dec: 'These sessions provide essential training and awareness for Grace Life Foundation scholarship recipients and their caregivers/parents. Led by our staff, the workshops educate learners on child rights, responsibilities, various forms of abuse, and the proper procedure for reporting child abuse cases.',
+    title: "Transforming Maternal Care: Grace Life Foundation's Impact at Dandamera Clinic",
+    slug: 'a-donation-to-dandamera-clinic',
+    dec: 'In November 2023, the Grace Life Foundation orchestrated a pivotal intervention at Dandamera Clinic in the heart of Mazowe Concession District, Zimbabwe. This initiative, born from the Care for A Soul program, stands as a testament to the power of strategic philanthropy and collaborative partnerships in healthcare.',
     prImg1: primg1,
     prImg2: primg2,
     fullDec: {
-      title1: "Nurturing Safe Communities: Grace Life Foundation's Child Protection Workshops ",
-      description1: "At Gracelife Foundation, our commitment extends beyond providing scholarships; it encompasses the well-being and safety of every child we support. Our Child Protection Workshops play a pivotal role in ensuring that our scholarship recipients and their caregivers/parents are equipped with the knowledge and awareness needed to safeguard our young learners.",
-      title2: "Empowering Through Knowledge",
-      description2: "Child protection is not just a responsibility; it's a collective duty to ensure that every child grows up in a safe and nurturing environment. Our Child Protection Workshops are designed to educate and empower learners and their caregivers/parents.",
-      title3: "A Holistic Approach",
-      description3: "Led by our dedicated staff, these workshops provide essential training on a range of critical topics. Participants gain insights into child rights, responsibilities, and various forms of abuse that children may face. By fostering an understanding of these issues, we empower our young learners to recognize and respond to potential threats",
-      title4: "Reporting for Change",
-      description4: "One of the cornerstones of our workshops is educating participants on the proper procedure for reporting child abuse cases. We believe that knowledge is the first step towards action, and equipping our learners with this vital information empowers them to speak up and seek help when needed.",
-      title5: "Protecting Futures",
-      description5: "The Child Protection Workshops are not just about awareness; they are about creating a culture of safety and protection. We understand that knowledge alone is not enough; it must be coupled with vigilance and action.",
-      title5: "Join Us in Making a Difference",
-      description5: "Child protection is a shared responsibility, and we invite you to join us in this critical endeavor. Your support, whether through donations, advocacy, or volunteering, can make a profound impact on the lives of our scholarship recipients. Stay connected with us for updates on our Child Protection Workshops and how you can get involved. Together, we can create safe communities where every child's well-being is a top priority. Join us in nurturing a brighter and safer future for all.",
+      title1: "Assessing Needs, Empowering Change",
+      description1: "Before the delivery of crucial hospital equipment, the Foundation's team meticulously conducted a needs assessment during a prior visit to the clinic. This thorough evaluation illuminated the pressing necessities within the clinic, urging swift action to bolster their healthcare provisions.",
+      title2: "Enhancing Maternity Care",
+      description2: "The donation encompassed a comprehensive array of indispensable hospital equipment. From a state-of-the-art maternity delivery bed and essential bed linen to critical medical devices such as resuscitators, baby digital scales, and thermometers, the donation encompassed an assortment of tools vital to enhancing maternal and infant care.",
+      // title3: "A Holistic Approach",
+      description3: "Within the Maternity Ward, these resources stand poised to catalyze a tangible reduction in Zimbabwe's infant mortality rate. With current statistics revealing a concerning 34.096 deaths per 1000 live births, the impact of this contribution is poised to make a considerable difference in safeguarding the lives of mothers and newborns.",
+      title4: "Collaborative Impact",
+      description4: "This monumental donation was made possible through a strategic partnership with the Nyaradzo Group. Leveraging the proceeds from the Nyati Mhenyu Golf Tournament, this collaboration exemplifies the potential of collective action in driving meaningful change.",
+      // title5: "Protecting Futures",
+      description5: "The union of Grace Life Foundation and Nyaradzo Group showcases the potency of collaboration in amplifying philanthropic endeavors, extending the reach and impact of charitable initiatives for the betterment of communities.",
+      // title5: "Join Us in Making a Difference",
+      description5: "In summary, the intervention at Dandamera Clinic serves as a beacon of hope, reflecting the collective dedication and unwavering commitment of Grace Life Foundation and their partners towards fostering healthier futures for Zimbabwe's mothers and their precious newborns.",
     },
     sideInfo: {
-      beneficiary:"Children of Zimbabwe",
+      beneficiary:"Dandamera Clinic",
       location: 'Zimbabwe',
-      date: 'Year by year',
-      duration: 'all year',
-      tags: 'Child Protection, GBV, Empowerment' 
+      date: '27 NOV 2023',
+      duration: '-',
+      tags: 'Donation, Health' 
 
     }
   },
@@ -227,24 +227,24 @@ const Projects = [
   {
     id: '7',
     projectImg: prj7,
-    title: "Borehole For Dandare Clinic",
-    slug: 'dandare-borehole',
-    dec: 'Grace Life Foundation achieved a significant milestone by partnering with Driptech Inc to commission a borehole for Dandamire Clinic to serve them with clean borehole water.',
+    title: "Borehole For Dandamera Clinic",
+    slug: 'dandamera-borehole',
+    dec: 'Grace Life Foundation achieved a significant milestone by partnering with Driptech Inc to commission a borehole for Dandamera Clinic to serve them with clean borehole water.',
     prImg7: primg7,
     prImg8: primg8,
     fullDec: {
-      title1: "Empowering Communities: Gracelife Foundation's Borehole Commissioning at Dandamire Clinic",
-      description1: "At Gracelife Foundation, our commitment to making a positive impact knows no bounds. We believe that access to clean water is a fundamental human right, and we're dedicated to ensuring that communities in need have this essential resource. It is with this vision in mind that we proudly announce the commissioning of a borehole at Dandamire Clinic, in partnership with Driptech Inc. This transformative project has brought much-needed relief and improved healthcare services to the clinic and its surrounding community.",
+      title1: "Empowering Communities: Gracelife Foundation's Borehole Commissioning at Dandamera Clinic",
+      description1: "At Gracelife Foundation, our commitment to making a positive impact knows no bounds. We believe that access to clean water is a fundamental human right, and we're dedicated to ensuring that communities in need have this essential resource. It is with this vision in mind that we proudly announce the commissioning of a borehole at Dandamera Clinic, in partnership with Driptech Inc. This transformative project has brought much-needed relief and improved healthcare services to the clinic and its surrounding community.",
       title2: "A Vital Partnership for Water Security",
-      description2: "Dandamire Clinic, nestled in a community where access to clean water has been a recurring challenge, faced considerable difficulties in ensuring a consistent supply of safe water. This issue not only hindered the clinic's ability to provide quality healthcare but also posed risks to the health and well-being of the community it serves. Recognizing the urgency of the situation, Gracelife Foundation partnered with Driptech Inc, a leading innovator in water solutions, to address this critical need.",
+      description2: "Dandamera Clinic, nestled in a community where access to clean water has been a recurring challenge, faced considerable difficulties in ensuring a consistent supply of safe water. This issue not only hindered the clinic's ability to provide quality healthcare but also posed risks to the health and well-being of the community it serves. Recognizing the urgency of the situation, Gracelife Foundation partnered with Driptech Inc, a leading innovator in water solutions, to address this critical need.",
       title3: "Turning Vision into Reality",
-      description3: "On the 8th of August 2023, our shared vision became a reality as we proudly commissioned the borehole at Dandamire Clinic. This borehole now stands as a symbol of hope, resilience, and progress for the community. With its installation, the clinic and its patients have gained access to a reliable and sustainable source of clean water, a resource essential for medical procedures, sanitation, and daily life.",
+      description3: "On the 8th of August 2023, our shared vision became a reality as we proudly commissioned the borehole at Dandamera Clinic. This borehole now stands as a symbol of hope, resilience, and progress for the community. With its installation, the clinic and its patients have gained access to a reliable and sustainable source of clean water, a resource essential for medical procedures, sanitation, and daily life.",
       title4: "Impact Beyond Measure",
-      description4: "The commissioning of this borehole is more than just the provision of water; it represents a profound transformation in the lives of those served by Dandamire Clinic.",
+      description4: "The commissioning of this borehole is more than just the provision of water; it represents a profound transformation in the lives of those served by Dandamera Clinic.",
       title5: "Joining Hands for a Brighter Future",
       description5: "As a gesture of our heartfelt appreciation, sponsors for the fundraising gala were presented with tokens of gratitude. These tokens serve as a reminder of the invaluable role they play in supporting our work and making a difference in the lives of those we serve.",
       title5: "Joining Hands for a Brighter Future",
-      description5: "At Gracelife Foundation, our mission is rooted in compassion and a deep commitment to making a lasting difference. This borehole commissioning at Dandamire Clinic exemplifies our unwavering dedication to improving lives and strengthening communities. We extend our heartfelt gratitude to Driptech Inc for their partnership and expertise in bringing clean water to those who need it most. Together, we've demonstrated that by joining hands and working toward a common goal, we can overcome challenges and create a brighter future for all. As we celebrate this significant milestone, we look forward to continuing our work, transforming lives, and empowering communities one project at a time. Together, we can make a world of difference.",
+      description5: "At Gracelife Foundation, our mission is rooted in compassion and a deep commitment to making a lasting difference. This borehole commissioning at Dandamera Clinic exemplifies our unwavering dedication to improving lives and strengthening communities. We extend our heartfelt gratitude to Driptech Inc for their partnership and expertise in bringing clean water to those who need it most. Together, we've demonstrated that by joining hands and working toward a common goal, we can overcome challenges and create a brighter future for all. As we celebrate this significant milestone, we look forward to continuing our work, transforming lives, and empowering communities one project at a time. Together, we can make a world of difference.",
     },
   },
 ]

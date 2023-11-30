@@ -51,6 +51,7 @@ const projectDetailsPage = (props) => {
                                                 <h1>{projectDetails?.fullDec?.title5}</h1>
                                                 <p>{projectDetails?.fullDec?.description5}</p>
                                             </div>
+
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
                                                     <li>Recipients :<span>{projectDetails?.sideInfo?.beneficiary}</span></li>
@@ -61,6 +62,11 @@ const projectDetailsPage = (props) => {
                                                 </ul>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div className="gallery">
+                                    <div>
+                                        <Image src={projectDetails?.prImg1} alt="" />
                                     </div>
                                 </div>
                                 <div className="wpo-solutions-section">
