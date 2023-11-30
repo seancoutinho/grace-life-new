@@ -55,8 +55,7 @@ const Projects = [
     title: "Greenhouse Project",
     slug: 'greenhouse-project',
     dec: "Our Green house project is flourishing. Recently we planted the next cycle of tomatoes at Chinyaradzo Children's Home. Thank you to everyone who is donating to make these projects successful.",
-    prImg1: primg1,
-    prImg2: primg2,
+
     benefits: "Greenhouse Project benefits",
     fullDec: {
       title1: "Empowering Communities Through Greenhouse Projects",
@@ -85,8 +84,6 @@ const Projects = [
     title: "Winter Blanket Drive",
     slug: 'blanket-drive',
     dec: 'Each year, at Gracelife Foundation, we extend our hearts to orphans, street kids, and child care homes in the wake of the cold with donations of blankets for warmth',
-    prImg1: primg1,
-    prImg2: primg2,
     fullDec: {
       title1: "Warming Hearts and Homes: Grace Life Foundation's Blanket Drive Program 2023",
       description1: "As winter's chill descends, Gracelife Foundation once again embraces a cherished tradition—the Blanket Drive Program. Each year, in the spirit of compassion and unity, we join hands with corporations and individuals to donate blankets to vulnerable communities. Our mission is simple yet profound: to ensure that no one faces the cold, harsh nights without the warmth and comfort of a blanket, regardless of their background. But our commitment goes beyond just blankets; we also provide additional essentials to bring comfort and relief to those in need.",
@@ -114,8 +111,6 @@ const Projects = [
     title: "School Fees Scholarships",
     slug: 'scholarship-panashe-gotora',
     dec: 'Panashe Gotora has been a scholarship recipient under our program since 2018 and recently graduated from Midlands State University with a book prize in Business Management, specializing in Finance.',
-    prImg1: primg1,
-    prImg2: primg2,
     fullDec: {
       title1: "Empowering Dreams Through Education: Gracelife Foundation's Scholarship Program",
       description1: "At Gracelife Foundation, we believe that education is the foundation upon which dreams are built. Our commitment to empowering young minds and creating opportunities for a brighter future is exemplified through our scholarship program. Today, we proudly share the inspiring journey of one of our scholarship recipients, Panashe Gotora.",
@@ -176,8 +171,6 @@ const Projects = [
     title: "Commemorative Events",
     slug: 'commemorative-events',
     dec: "Commemorative Events: Grace Life Foundation actively participates in various commemorative events, including the '16 Days of Activism against Gender-Based Violence', 'Breast Cancer Awareness' and the 'International Day of the African Child' and many, many others.",
-    prImg1: primg1,
-    prImg2: primg2,
     fullDec: {
       title1: "Commemorating Change: Grace Life Foundation's Commitment to Impactful Events",
       description1: "At Gracelife Foundation, we believe in the power of commemorative events to raise awareness, inspire change, and make a difference in the lives of those we serve. Our active participation in events such as the '16 Days of Activism against Gender-Based Violence,' 'Breast Cancer Awareness,' and the 'International Day of the African Child' underscores our unwavering commitment to meaningful causes.",
