@@ -10,7 +10,7 @@ const HeaderTopbar = () => {
                         <div className="contact-intro">
                             <ul>
                                 <li><i className="fi ti-location-pin"></i>20 Ray Amm Rd, Eastlea, Harare, Zimbabwe</li>
-                                <li><i className="fi flaticon-email"></i> charitio@gmail.com</li>
+                                <li><i className="fi flaticon-email"></i> admin1@gracelifefoundation.com</li>
                             </ul>
                         </div>
                     </div>
@@ -18,10 +18,9 @@ const HeaderTopbar = () => {
                         <div className="contact-info">
                             <ul>
                                 <li>Visit our social pages</li>
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><i className="ti-facebook"></i></a></li>
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/"><i className="ti-twitter-alt"></i></a></li>
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><i className="ti-instagram"></i></a></li>
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/"><i className="ti-google"></i></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/GraceLifeFDN/"><i className="ti-facebook"></i></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/GraceLifeFDN"><i className="ti-twitter-alt"></i></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gracelifefoundation_/"><i className="ti-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>

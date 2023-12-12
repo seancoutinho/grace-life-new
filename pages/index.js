@@ -1,5 +1,10 @@
 import React, { Fragment } from 'react';
 import Navbar from '../components/Navbar'
+import Hero2 from '../components/hero2'
+import Hero3 from '../components/hero3'
+import Hero4 from '../components/hero4'
+import Hero5 from '../components/hero5'
+
 import Hero6 from '../components/hero6'
 import Service from '../components/Service'
 import AboutS2 from '../components/AboutS2'
@@ -35,7 +40,7 @@ const HomePage = () => {
                 </Head>
             </Head>
             <Navbar Logo={Logo} hclass={'wpo-header-style-2'} />
-            <Hero6 heroClass={'wpo-hero-section-6'} />
+            <Hero5 heroClass={'wpo-hero-section-6'} />
             <Service Fclass={'wpo-features-section-s2'} />
             <AboutS2 />
             <CauseSection />
