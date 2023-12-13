@@ -9,7 +9,10 @@ import Service from '../../components/Service';
 import AboutS2 from '../../components/AboutS2';
 import FunFact from '../../components/FunFact';
 import CauseSection from '../../components/CauseSection';
-import TeamSection from '../../components/TeamSection';
+import TeamSection2 from '../../components/TeamSection2';
+
+
+
 import PartnerSection from '../../components/PartnerSection';
 
 
@@ -19,6 +22,7 @@ const AboutPage =() => {
             <Navbar Logo={Logo}/>
             <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
             <VideoSec/>
+            <TeamSection2 />
             <Service Fclass={'wpo-features-section-s2'}/>
             <Footer/>
             <Scrollbar/>

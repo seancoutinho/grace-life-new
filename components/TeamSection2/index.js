@@ -18,17 +18,16 @@ const TeamSection2 =() => {
                     <div className="col-lg-6">
                         <div className="wpo-section-title">
                             <span>Expert Team</span>
-                            <h2>Meet Our Volunteer Team</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form,</p>
+                            <h2>Meet The Gracelife Foundation Team</h2>
+                            <p>We have a great team that helps us make the projects at Gracelife Foundation a success</p>
                         </div>
                     </div>
                 </div>
                 <div className="wpo-team-wrap">
                     <div className="team-items">
                         <div className="row">
-                            {Teams.slice(6,10).map((Team, tm) => (
-                                <div className="col-lg-3 col-md-6 col-12" key={tm}>
+                            {Teams.slice(0,3).map((Team, tm) => (
+                                <div className="col-lg-4 col-md-6 col-12" key={tm}>
                                     <div className="wpo-team-item" >
                                         <div className="wpo-team-img">
                                             <Image src={Team.tImg} alt=""/>
