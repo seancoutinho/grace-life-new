@@ -53,47 +53,20 @@ const menus = [
             }
         ]
     },
-    // {
-    //     id: 5,
-    //     title: 'Blog',
-    //     link: '/blog',
-    //     submenu: [
-    //         {
-    //             id: 51,
-    //             title: 'Blog',
-    //             link: '/blog'
-    //         },
-    //         {
-    //             id: 52,
-    //             title: 'Blog Left sidebar',
-    //             link: '/blog-left'
-    //         },
-    //         {
-    //             id: 53,
-    //             title: 'Blog full width',
-    //             link: '/blog-fullwidth'
-    //         },
-    //         {
-    //             id: 54,
-    //             title: 'Blog single',
-    //             link: '/blog-single/Make-Someone’s'
-    //         },
-    //         {
-    //             id: 55,
-    //             title: 'Blog single Left sidebar',
-    //             link: '/blog-single-left-sidebar/Make-Someone’s'
-    //         },
-    //         {
-    //             id: 56,
-    //             title: 'Blog single Left sidebar',
-    //             link: '/blog-single-fullwidth/Make-Someone’s'
-    //         },
-    //     ]
-    // },
     {
-        id: 88,
+        id: 5,
+        title: 'Blog',
+        link: '/blog',
+    },
+    {
+        id: 6,
+        title: 'Who We Are ',
+        link: '/about',
+},
+{
+    id: 88,
         title: 'Contact Us',
-        link: '/contact',
+            link: '/contact',
     }
 
 
@@ -159,7 +132,6 @@ export default class MobileMenu extends Component {
                             )
                         })}
                     </ul>
-
                 </div>
 
                 <div className="showmenu" onClick={this.menuHandler}>

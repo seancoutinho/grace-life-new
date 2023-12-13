@@ -42,8 +42,15 @@ const Teams = [
       id: '3',
       tImg: timg3,
       name: 'Rejoice Utseya',
+      email: 'rijoutseya@gmail.com',
       slug: 'rejoice-utseya',
       title: 'Manager',
+      phone: '+263 773 017 535',
+      experience: '7 years',
+      languages: 'English(fluent), Shona (fluent), Ndebele (fluent)',
+      education: "Bachelor of Social Science, Honors degree in Social Work | University of Zimbabwe",
+      education2: "Masters of Social Science degree in Social Work | University of Zimbabwe",
+      description: "I am a Young African Startup Founder seeking to make a significant impact in the African communities I work in by offering solutions to the problems being faced by African businesses and communities. Through my Fintech Company Raysun Capital, We are providing working capital solutions to small businesses to enable them to keep operating and focus on growing their businesses. At Grace Life Foundation, I lead the team in delivering on our mandate of delivering sustainable change in the livelihoods of our beneficiaries.We work with 3 guiding pillars of achieving this, which are enhancing access to Health Care, Access to Education and Food Security."
    },
    {
       id: '4',
