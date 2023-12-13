@@ -28,7 +28,7 @@ const Teams = [
       id: '2',
       tImg: timg2,
       name: 'Brian Munyawarara',
-      email: 'brianmunyawarara@gracelifefoundation.com',
+      email: 'info@brm-global.com',
       slug: 'brian-munyawarara',
       title: 'CEO/Founder',
       phone: '+263 773 017 535',
