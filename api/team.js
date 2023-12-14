@@ -38,7 +38,7 @@ const Teams = [
       languages: 'English(fluent), Shona (fluent)',
       education: "Bachelors Degree, Economics and Business Finance | Brunel University London",
       education2: "Certified Expert in Microfinance | Frankfurt School of Finance",
-      description: "I am a Young African Startup Founder seeking to make a significant impact in the African communities I work in by offering solutions to the problems being faced by African businesses and communities. Through my Fintech Company Raysun Capital, We are providing working capital solutions to small businesses to enable them to keep operating and focus on growing their businesses. At Grace Life Foundation, I lead the team in delivering on our mandate of delivering sustainable change in the livelihoods of our beneficiaries.We work with 3 guiding pillars of achieving this, which are enhancing access to Health Care, Access to Education and Food Security."
+      description: "I am a Young African Startup Founder seeking to make a significant impact in the African communities I work in by offering solutions to the problems being faced by African businesses and communities. Through my Fintech Company Raysun Capital, We are providing working capital solutions to small businesses to enable them to keep operating and focus on growing their businesses. At Grace Life Foundation, I lead the team in fulfilling our mandate of delivering sustainable change in the livelihoods of our beneficiaries.We work with 3 guiding pillars of achieving this, which are enhancing access to Health Care, Access to Education and Food Security."
    },
    {
       id: '3',
@@ -50,10 +50,10 @@ const Teams = [
       title: 'Manager',
       phone: '+263 776 247 019',
       experience: '7 years',
-      languages: 'English(fluent), Shona (fluent), Ndebele (fluent)',
+      languages: 'English(fluent), Shona (fluent), Ndebele (moderate)',
       education: "Bachelor of Social Science, Honors degree in Social Work | University of Zimbabwe",
       education2: "Masters of Social Science degree in Social Work | University of Zimbabwe",
-      description: " I proudly serve as the Manager at Gracelife Foundation. With a wealth of experience in Child Protection and Community Development, my journey is grounded in a genuine passion for making a difference. At Gracelife Foundation, I am the driving force behind ensuring all operations run seamlessly.My commitment goes beyond the administrative tasks – it's about creating a positive impact in the lives of the communities we serve. Every day, I am fueled by the belief that empowering communities and protecting children are not just roles but a responsibility.Join me on this journey, as we work together to build a brighter, more compassionate future under the guiding principles of Gracelife Foundation. Welcome to our community, where positive change begins with each one of us."
+      description: " I proudly serve as the Manager at Gracelife Foundation. With a wealthy of experience in Child Protection and Community Development, my journey is grounded in a genuine passion for making a difference. At Gracelife Foundation, I am the driving force behind ensuring all operations run seamlessly.My commitment goes beyond the administrative tasks – it's about creating a positive impact in the lives of the communities we serve. Every day, I am fueled by the belief that empowering communities and protecting children are not just roles but a responsibility.Join me on this journey, as we work together to build a brighter, more compassionate future under the guiding principles of Gracelife Foundation. Welcome to our community, where positive change begins with each one of us."
    },
    {
       id: '4',

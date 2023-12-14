@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useRouter } from 'next/router'
 import Teams from '../../api/team'
 import Navbar from '../../components/Navbar';
@@ -7,18 +7,51 @@ import Scrollbar from '../../components/scrollbar'
 import Footer from '../../components/footer';
 import Image from 'next/image'
 import Logo from '/public/images/logo.png'
-
-
+import { toast } from 'react-toastify';
 
 const TeamSinglePage = (props) => {
     const router = useRouter()
-
+    const { slug } = router.query; 
+    
     const TeamSingle = Teams.find(item => item.slug === router.query.slug)
 
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        address: '',
+        note: '',
+        sendToEmail: TeamSingle?.workEmail,
+    });
 
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch(`/api/team-single/${slug}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                console.log('Email sent successfully!');
+                toast.success('Email sent successfully!');
+            } else {
+                console.error('Failed to send email');
+                toast.error('Failed to send email');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
 
 
     return (
@@ -125,24 +158,60 @@ const TeamSinglePage = (props) => {
                                 <div className="wpo-contact-area ex-wiget">
                                     <h2>Contact Me</h2>
                                     <div className="quote-form">
-                                        <form onSubmit={SubmitHandler}>
+                                        <form onSubmit={handleSubmit}>
                                             <div className="form-group half-col">
-                                                <input type="text" className="form-control" placeholder="Name:" name="name" />
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    placeholder="Name:"
+                                                    name="name"
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                             <div className="form-group half-col">
-                                                <input type="email" className="form-control" placeholder="Email:" name="email" />
+                                                <input
+                                                    type="email"
+                                                    className="form-control"
+                                                    placeholder="Email:"
+                                                    name="email"
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                             <div className="form-group half-col">
-                                                <input type="text" className="form-control" placeholder="Subject:" name="subject" />
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    placeholder="Subject:"
+                                                    name="subject"
+                                                    value={formData.subject}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                             <div className="form-group half-col">
-                                                <input type="text" className="form-control" placeholder="Your Address:" name="address" />
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    placeholder="Your Address:"
+                                                    name="address"
+                                                    value={formData.address}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                             <div className="form-group full-col">
-                                                <textarea className="form-control" name="note" placeholder="Description..."></textarea>
+                                                <textarea
+                                                    className="form-control"
+                                                    name="note"
+                                                    placeholder="Description..."
+                                                    value={formData.note}
+                                                    onChange={handleChange}
+                                                ></textarea>
                                             </div>
                                             <div className="form-group full-col">
-                                                <button className="btn theme-btn" type="submit">Get In Touch</button>
+                                                <button className="btn theme-btn" type="submit">
+                                                    Get In Touch
+                                                </button>
                                             </div>
                                         </form>
                                     </div>
