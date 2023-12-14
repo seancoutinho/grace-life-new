@@ -41,7 +41,8 @@ const TeamSinglePage = (props) => {
                                         <li>Position: <span>{TeamSingle?.title}</span></li>
                                         <li>Experience:<span>{TeamSingle?.experience}</span></li>
                                         <li>Phone:<span>{TeamSingle?.phone}</span></li>
-                                        <li>Email:<span>{TeamSingle?.email}</span></li>
+                                        <li>Personal Email:<span>{TeamSingle?.email}</span></li>
+                                        <li>Work Email:<span>{TeamSingle?.workEmail}</span></li>
                                         <li>Tel:<span>+263 8677008143</span></li>
                                     </ul>
                                 </div>
