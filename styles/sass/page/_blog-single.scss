@@ -130,8 +130,8 @@
 
 
 		blockquote {
-			background-color: #000000;
-			color: #00ff1a;
+			background-color: $section-bg-color;
+			color: #000000;
 			font-size: 20px;
 			line-height: 1.6em;
 			padding: 65px;
@@ -140,7 +140,6 @@
 			border: 0;
 			text-align: center;
 			position: relative;
-			text-decoration: underline;
 
 			@include media-query(767px) {
 				padding: 55px 25px;
