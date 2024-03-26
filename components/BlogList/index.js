@@ -20,7 +20,7 @@ const BlogList = (props) => {
                 <div className="row">
                     <div className={`col col-lg-8 col-12 ${props.blRight}`}>
                         <div className="wpo-blog-content">
-                            {blogs.slice(0,4).map((blog, bitem) => (
+                            {blogs.slice(0,5).map((blog, bitem) => (
                                 <div className={`post  ${blog.blClass}`}key={bitem}>
                                     <div className="entry-media video-holder">
                                         <Image src={blog.blogSingleImg} alt=""/>
@@ -28,7 +28,6 @@ const BlogList = (props) => {
                                     <div className="entry-meta">
                                         <ul>
                                             <li><i className="fi flaticon-user"></i> By <Link onClick={ClickHandler} href='/blog-single/[slug]' as={`/blog-single/${blog.slug}`}>{blog.authorTitle}</Link> </li>
-                                            <li><i className="fi flaticon-comment-white-oval-bubble"></i> Comments {blog.comment} </li>
                                             <li><i className="fi flaticon-calendar"></i> {blog.create_at}</li>
                                         </ul>
                                     </div>

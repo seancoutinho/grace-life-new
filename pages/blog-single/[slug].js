@@ -43,21 +43,26 @@ const BlogSingle = (props) => {
                                     <div className="entry-meta">
                                         <ul>
                                             <li><i className="fi ti-user"></i> By <Link href="/">{BlogDetails?.author}</Link> </li>
-                                            <li><i className="fi ti-comment-alt"></i> Comments {BlogDetails?.comment}</li>
                                             <li><i className="fi flaticon-calendar"></i> {BlogDetails?.create_at}</li>
                                         </ul>
                                     </div>
                                     <h2>{BlogDetails?.title}</h2>
                                     <p>{BlogDetails?.description}</p>
+                                    <p>{BlogDetails?.description2}</p>
+                                    <h3>{BlogDetails?.description3Heading}</h3>
+                                    <Image src={BlogDetails?.description3Image} alt="" />
+                                    <p>{BlogDetails?.description3}</p>
+                                    <h3>{BlogDetails?.description4Heading}</h3>
+                                    <Image src={BlogDetails?.description4Image} alt="" />
+                                    <p>{BlogDetails?.description4}</p>
+                                    <h3>{BlogDetails?.description5Heading}</h3>
+                                    <Image src={BlogDetails?.blogBtmImage1} alt="" />
+                                    <p>{BlogDetails?.description5}</p>
                                     {BlogDetails?.quote && (
                                         <blockquote>
                                             {BlogDetails?.quote}
                                         </blockquote>
                                     )}
-                                    <p>{BlogDetails?.description2}</p>
-                                    <p>{BlogDetails?.description3}</p>
-                                    <p>{BlogDetails?.description4}</p>
-                                    <p>{BlogDetails?.description5}</p>
                                     <p>{BlogDetails?.description6}</p>
                                     <p>{BlogDetails?.description7}</p>
                                     <div className="gallery">
