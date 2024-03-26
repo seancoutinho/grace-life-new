@@ -95,7 +95,7 @@ const Footer = (props) =>{
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <p className="copyright"> &copy; 2023 Gracelife Foundation. All Rights Reserved.</p>
+                        <p className="copyright"> &copy; 2024 Gracelife Foundation. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
