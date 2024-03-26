@@ -56,13 +56,13 @@ const BlogSingle = (props) => {
                                     <Image src={BlogDetails?.description4Image} alt="" />
                                     <p>{BlogDetails?.description4}</p>
                                     <h3>{BlogDetails?.description5Heading}</h3>
-                                    <Image src={BlogDetails?.blogBtmImage1} alt="" />
                                     <p>{BlogDetails?.description5}</p>
                                     {BlogDetails?.quote && (
                                         <blockquote>
                                             {BlogDetails?.quote}
                                         </blockquote>
                                     )}
+                                    <Image src={BlogDetails?.QuoteImage} alt="" />
                                     <p>{BlogDetails?.description6}</p>
                                     <p>{BlogDetails?.description7}</p>
                                     <div className="gallery">

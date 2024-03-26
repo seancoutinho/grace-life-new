@@ -32,6 +32,7 @@ import blogSingleImg3 from "/public/images/blog/3.jpg";
 
 import blogTitle1 from "/public/images/blog/blog-headings/tinoblog-1.JPG";
 import blogTitle2 from "/public/images/blog/blog-headings/tinoblog-2.JPG";
+import blogTitle3 from "/public/images/blog/blog-headings/tinoblog-3.JPG";
 
 
 
@@ -90,6 +91,7 @@ const blogs = [
         twitter: "https://twitter.com/chasi235",
         linkedIn: "https://www.linkedin.com/in/tinokundachasara/",
         blClass: 'format-standard-image',
+        QuoteImage: blogTitle3,
     },
     {
         id: '1',
