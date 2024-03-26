@@ -7,11 +7,6 @@ import Projects from '../../api/projects'
 import about from '/public/images/blog/about-widget.jpg'
 import Image from 'next/image';
 
-
-import blogAvaterImg1 from "/public/images/blog/blog-avater/rejoice-utseya.jpeg";
-import blogAvaterImg2 from "/public/images/blog/blog-avater/img-2.jpg";
-import blogAvaterImg3 from "/public/images/blog/blog-avater/Munyaradzi-Makosa.jpg";
-
 const BlogSidebar = (props) => {
 
     const router = useRouter()
