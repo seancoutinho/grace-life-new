@@ -82,7 +82,7 @@ const blogs = [
         author: 'Tinokunda Chasara',
         authorTitle: 'manager',
         authorImg: blogAvaterImg4,
-        create_at: '04 APR 24',
+        create_at: '01 APR 24',
         blogSingleImg: blogSingleImg6,
         comment: '80',
         facebook: "https://www.facebook.com/chasi235",
