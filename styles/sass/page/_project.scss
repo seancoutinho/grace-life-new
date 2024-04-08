@@ -43,6 +43,15 @@
                     padding: 35px 0;
                 }
 
+                div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    flex-direction: row;
+                }
+
                 h2{
                     font-size: 33px;
                     font-family: $heading-font;

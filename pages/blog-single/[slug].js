@@ -98,7 +98,7 @@ const BlogSingle = (props) => {
                                 </div> */}
 
                                 <div className="author-box">
-                                
+
                                     <div className="author-content">
                                         <Link href="/" className="author-name">Author: {BlogDetails?.author}</Link>
                                         <p>{BlogDetails?.aboutAuthor}</p>
@@ -112,7 +112,7 @@ const BlogSingle = (props) => {
                                         </div>
                                     </div>
                                 </div>
-{/* 
+                                {/* 
                                 <div className="more-posts">
                                     <div className="previous-post">
                                         <Link href="/">

@@ -34,7 +34,9 @@ import blogTitle1 from "/public/images/blog/blog-headings/tinoblog-1.JPG";
 import blogTitle2 from "/public/images/blog/blog-headings/tinoblog-2.JPG";
 import blogTitle3 from "/public/images/blog/blog-headings/tinoblog-3.JPG";
 
-
+import blogTitle104 from "/public/images/blog/blog-headings/tinoblog-1-04-04-23.JPG";
+import blogTitle204 from "/public/images/blog/blog-headings/tinoblog-2-04-04-23.JPG";
+import blogTitle304 from "/public/images/blog/blog-headings/tinoblog-3-04-04-23.JPG";
 
 import blogSingleImg4 from "/public/images/blog/4.jpg";
 import blogSingleImg5 from "/public/images/blog/5.jpg";
@@ -66,6 +68,31 @@ import blogBottomImage8 from '/public/images/blog/bottom-img-8.jpg'
 const blogs = [
     {
         id: '0',
+        title: 'Are You Looking To Get Involved?',
+        slug: 'how-to-get-involved-and-support-the-cause',
+        screens: blogImg5,
+        description: 'Grace Life Foundation is a social impact organization dedicated to making a positive impact on the lives of individuals in need. Founded on the principles of healthcare, food security and education, Grace Life Foundation strives to create a more inclusive and supportive environment for those facing various challenges. Community involvement plays a vital role in the success of our foundation, as it enables individuals to come together, pool their resources, and work towards a common goal of improving the well-being of others. By engaging with Grace Life Foundation, people have the opportunity to make a difference in the lives of those less fortunate and contribute to the betterment of society as a whole.',
+        description2: "One of the most impactful ways for individuals to get involved with Grace Life Foundation is through volunteer opportunities.Volunteering not only allows individuals to donate their time and skills to directly support the organization's initiatives but also provides a hands - on experience in serving the community.Whether it's assisting in organizing events, participating in outreach programs, or offering professional expertise, volunteers play a crucial role in the day - to - day operations of Grace Life Foundation(GLF).By dedicating their time and energy to volunteering, individuals can witness first - hand the positive impact their efforts have on those in need and forge meaningful connections with like - minded individuals who share a passion for giving back to the community.",
+        description3Image: blogTitle204,
+        description3: "In addition to volunteering, individuals can also support Grace Life Foundation through donations and participation in fundraising events.Donations, whether monetary or in-kind, provide essential resources that enable the organization to carry out its charitable activities and expand its reach to more individuals in need.Fundraising events, such as charity galas, auctions, or community drives, not only help raise funds for specific projects but also serve as platforms to raise awareness about the organization&#39;s mission and engage the community in supporting its cause.By contributing through donations or participating in fundraising events, individuals can make a tangible impact on the work of Grace Life Foundation and help create positive change in the lives of those who benefit from its programs and services. ",
+        description4Image: blogTitle304,
+        description4: "Another effective way for individuals to get involved with Grace Life Foundation is by spreading awareness through social media platforms and word-of-mouth. By sharing the organization's mission, success stories, and upcoming events on social media channels such as Facebook, Twitter, and Instagram, individuals can reach a wider audience and attract more support for Grace Life Foundation's initiatives. Additionally, word-of-mouth recommendations and personal testimonials can have a powerful impact in garnering community support and encouraging others to get involved. By leveraging the power of social networks and personal connections, individuals can amplify the reach and impact of Grace Life Foundation, ultimately helping to raise awareness, increase engagement, and inspire others to join in the mission of making a difference in the lives of those in need.",
+        description5: "Engaging with Grace Life Foundation offers numerous benefits to individuals beyond the satisfaction of contributing to a noble cause. By getting involved with the organization, individuals can experience a sense of personal fulfilment and purpose as they witness the positive impact of their actions on the lives of others. Moreover, active participation in charitable initiatives allows individuals to make a meaningful difference in their community, fostering a sense of connection and belonging. Building relationships with fellow volunteers, donors, and beneficiaries of Grace Life Foundation can also lead to the formation of lasting bonds and networks that extend beyond the realm of philanthropy. Ultimately, by engaging with Grace Life Foundation, individuals have the opportunity to not only give back to those in need but also enrich their own lives through meaningful connections, shared experiences, and a sense of shared purpose.",
+        description6: "In conclusion, Grace Life Foundation offers a platform for individuals to make a positive impact on the lives of those in need through volunteer opportunities, donations, fundraising events, and community engagement. By actively participating in the organization's initiatives, individuals can contribute to the betterment of society, experience personal fulfilment, and build meaningful connections with like-minded individuals. Through the collective efforts of volunteers, donors, and supporters, Grace Life Foundation continues to uphold its mission of food security, better healthcare and provision of education, creating a more inclusive and supportive environment for all. As we look towards the future, let us join hands in furthering the noble cause of Grace Life Foundation and making a lasting difference in the lives of others.",
+        author: 'Tinokunda Chasara',
+        authorTitle: 'manager',
+        authorImg: blogAvaterImg4,
+        create_at: '26 MAR 24',
+        blogSingleImg: blogSingleImg6,
+        comment: '80',
+        facebook: "https://www.facebook.com/chasi235",
+        instagram: "https://www.instagram.com/zimbo_chazz/",
+        twitter: "https://twitter.com/chasi235",
+        linkedIn: "https://www.linkedin.com/in/tinokundachasara/",
+        blClass: 'format-standard-image',
+    },
+    {
+        id: '1',
         title: 'Empowering Communities Through Food: The GLF Greenhouse Initiative',
         slug: 'empowering-communities-through-food-the-glf-greenhouse-initiative',
         screens: blogImg5,
@@ -94,7 +121,7 @@ const blogs = [
         QuoteImage: blogTitle3,
     },
     {
-        id: '1',
+        id: '2',
         title: `Zimbabwe Leads In Cancer Morbidity And Mortality Rates.`,
         slug: 'zimbabwe-leads-in-cancer-mobidity-and-mortality-rates',
         screens: blogImg1,
@@ -117,7 +144,7 @@ const blogs = [
         blClass: 'format-standard-image',
     },
     {
-        id: '2',
+        id: '3',
         title: 'Government Initiatives To Curb Cholera Prompt Controversy',
         slug: 'government-initiatives-to-curb-cholera-prompt-controversy',
         screens: blogImg2,
@@ -139,7 +166,7 @@ const blogs = [
         blClass: 'format-standard-image',
     },
     {
-        id: '3',
+        id: '4',
         title: 'Surge In Mental Health Cases Linked To Substance Abuse',
         slug: 'surge-in-mental-health-cases-linked-to-substance-abuse',
         screens: blogImg3,
@@ -162,7 +189,7 @@ const blogs = [
         blClass: 'format-video',
     },
     {
-        id: '4',
+        id: '5',
         title: 'Child Marriages in Zimabwe, A Thorn in The Flesh',
         slug: 'child-mariages-in-zimbabwe-a-thorn-in-the-flesh',
         screens: blogImg4,

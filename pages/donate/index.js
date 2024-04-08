@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment, useState } from 'react';
 import Navbar from '../../components/Navbar';
 import PageTitle from '../../components/pagetitle'
 import Footer from '../../components/footer'
@@ -9,69 +9,126 @@ import pimg2 from '/public/images/checkout/img-2.png'
 import pimg3 from '/public/images/checkout/img-3.png'
 import pimg4 from '/public/images/checkout/img-4.png'
 import Image from 'next/image';
+import CryptoJS from 'crypto-js';
 
+const DonatePage = () => {
 
-const DonatePage =() => {
+    const INTEGRATION_KEY = "0a33fe48 - cd41 - 41a6 - b92b - 2821bc1ba02d"
+    const ENCRYPTION_KEY = "eb5c85c1c7054c7ebbd4af549adb74c9"
+    const SECRET_KEY = "gracelife2024"
 
-    const SubmitHandler = (e) => {
-        e.preventDefault()
+    const [online, setOnline] = useState(false);
+
+    const [formData, setFormData] = useState({
+        payload: {
+        "amountDetails": {
+            "amount": 10,
+            "currencyCode": "USD"
+        },
+        "reasonForPayment": "Just a donation",
+        "resultUrl": "https://my.gracelifefoundation.com/donate",
+        "returnUrl": "https://gracelifefoundation.com/donate/thank-you",
+    }});
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
     }
 
-    return(
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Encrypt the JSON data
+        const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(formData), SECRET_KEY).toString();
+
+        try {
+            const response = await fetch('https://api.pesepay.com/api/payments-engine/v1/payments/initiate', {
+                method: 'POST',
+                headers: {
+                    'Authorization': INTERGRATION_KEY,
+                    'Content-Type': 'application/json'
+                },
+                body: encryptedData // Send the encrypted data
+            });
+
+            if (response.ok) {
+                const responseData = await response.json();
+                console.log('Payment successful:', responseData);
+                // Redirect user to the appropriate page or handle success
+            } else {
+                console.error('Payment failed:', response.status);
+                // Handle payment failure
+            }
+        } catch (error) {
+            console.error('Error making payment:', error);
+            // Handle error making payment
+        }
+    };
+
+
+    return (
         <Fragment>
-            <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'Donate'} pagesub={'Donate'}/> 
-                <div className="wpo-donation-page-area section-padding">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-8">
-                                <div className="wpo-donate-header">
-                                    <h2>Make a Donation</h2>
-                                </div>
-                                <div id="Donations" className="tab-pane">
-                                    <form onSubmit={SubmitHandler}>
-                                        <div className="wpo-donations-amount">
-                                            <h2>Your Donation</h2>
-                                            <input type="text" className="form-control" name="text" id="text" placeholder="Enter Donation Amount" />
-                                        </div>
-                                        <div className="wpo-donations-details">
-                                            <h2>Details</h2>
-                                            <div className="row">
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                    <input type="text" className="form-control" name="name" id="fname" placeholder="First Name" />
-                                                </div>
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                    <input type="text" className="form-control" name="name" id="name" placeholder="Last Name" />
-                                                </div>
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
-                                                    <input type="email" className="form-control" name="email" id="email" placeholder="Email" />
-                                                </div>
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                    <input type="text" className="form-control" name="Adress" id="Adress" placeholder="Adress" />
-                                                </div>
-                                                <div className="col-lg-12 col-12 form-group">
-                                                    <textarea className="form-control" name="note" id="note" placeholder="Message"></textarea>
-                                                </div>
+            <Navbar Logo={Logo} />
+            <PageTitle pageTitle={'Donate'} pagesub={'Donate'} />
+            <div className="wpo-donation-page-area section-padding">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                            <div className="wpo-donate-header">
+                                <h2>Make a Donation</h2>
+                            </div>
+                            <div id="Donations" className="tab-pane">
+                                <form onSubmit={handleSubmit}>
+                                    <div className="wpo-donations-amount">
+                                        <h2>Your Donation</h2>
+                                        <input type="number" className="form-control" name="amount" id="amount" onChange={handleChange} placeholder="Enter Donation Amount" />
+                                    </div>
+                                    <div className="wpo-donations-details">
+                                        <h2>Details</h2>
+                                        <div className="row">
+                                            <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                                <input type="text" className="form-control" name="firstName" id="firstName" placeholder="First Name" />
+                                            </div>
+
+                                            <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                                <input type="text" className="form-control" name="lastName" id="lastName" placeholder="Last Name" />
+                                            </div>
+                                            
+                                            <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
+                                                <input type="email" className="form-control" name="email" id="email" placeholder="Email" />
+                                            </div>
+                                            
+                                            <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                                <input type="text" className="form-control" name="phone" id="phone" placeholder="Phone Number" />
+                                            </div>
+
+                                            <div className="col-lg-12 col-12 form-group">
+                                                <textarea className="form-control" name="message" id="message" placeholder="Tell us more about your donation "></textarea>
                                             </div>
                                         </div>
-                                        <div className="wpo-doanation-payment">
-                                            <h2>Choose Your Payment Method</h2>
-                                            <div className="wpo-payment-area">
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <div className="wpo-payment-option" id="open4">
-                                                            <div className="wpo-payment-select">
-                                                                <ul>
-                                                                    <li className="addToggle">
-                                                                        <input id="add" type="radio" name="payment" value="30" />
-                                                                        <label htmlFor="add">Payment By Card</label>
-                                                                    </li>
-                                                                    <li className="removeToggle">
-                                                                        <input id="remove" type="radio" name="payment" value="30" />
-                                                                        <label htmlFor="remove">Offline Donation</label>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                    </div>
+                                    <div className="wpo-doanation-payment">
+                                        <h2>Choose Your Payment Method</h2>
+                                        <div className="wpo-payment-area">
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="wpo-payment-option" id="open4">
+                                                        <div className="wpo-payment-select">
+                                                            <ul>
+                                                                <li className="addToggle">
+                                                                    <input onClick={() => setOnline(true)} id="add" type="radio" name="payment" value="30" />
+                                                                    <label htmlFor="add">Payment By Card</label>
+                                                                </li>
+                                                                <li className="removeToggle">
+                                                                    <input onClick={() => setOnline(false)} id="remove" type="radio" name="payment" value="30" />
+                                                                    <label htmlFor="remove">Offline Donation</label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        {online ? <div>
                                                             <div id="open5" className="payment-name">
                                                                 <ul>
                                                                     <li className="visa"><input id="1" type="radio" name="size" value="30" />
@@ -108,22 +165,28 @@ const DonatePage =() => {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> : (
+                                                                <div className='wpo-doanation-payment'>
+                                                                    <p>Thank you for your interest to donate to our cause and help someone out there. Kindly visit our offices at the address below to make a cash donation.</p>
+                                                                    <h2 className='p-12'>20 Ray Amm Road, Eastlea, Harare or call us on +263 8677008143</h2>
+                                                            </div>
+                                                        )}
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="submit-area">
-                                            <button type="submit" className="theme-btn submit-btn">Donate Now</button>
-                                        </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div className="submit-area">
+                                        <button type="submit" className="theme-btn submit-btn">Donate Now</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            <Footer/>
-            <Scrollbar/>
+            </div>
+            <Footer />
+            <Scrollbar />
         </Fragment>
     )
 };

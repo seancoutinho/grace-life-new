@@ -6,9 +6,6 @@ import shape2 from '/public/images/slider/sp2.png'
 import shape3 from '/public/images/slider/sp3.png'
 import Image from "next/image";
 
-
-
-
 const Hero2 = () => {
 
     const ClickHandler = () => {
