@@ -21,14 +21,15 @@ const DonatePage = () => {
 
     const [formData, setFormData] = useState({
         payload: {
-        "amountDetails": {
-            "amount": 10,
-            "currencyCode": "USD"
-        },
-        "reasonForPayment": "Just a donation",
-        "resultUrl": "https://my.gracelifefoundation.com/donate",
-        "returnUrl": "https://gracelifefoundation.com/donate/thank-you",
-    }});
+            "amountDetails": {
+                "amount": 10,
+                "currencyCode": "USD"
+            },
+            "reasonForPayment": "Just a donation",
+            "resultUrl": "https://my.gracelifefoundation.com/donate",
+            "returnUrl": "https://gracelifefoundation.com/donate/thank-you",
+        }
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -96,11 +97,11 @@ const DonatePage = () => {
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
                                                 <input type="text" className="form-control" name="lastName" id="lastName" placeholder="Last Name" />
                                             </div>
-                                            
+
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
                                                 <input type="email" className="form-control" name="email" id="email" placeholder="Email" />
                                             </div>
-                                            
+
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
                                                 <input type="text" className="form-control" name="phone" id="phone" placeholder="Phone Number" />
                                             </div>
@@ -130,7 +131,7 @@ const DonatePage = () => {
                                                         </div>
                                                         {online ? <div>
                                                             <div id="open5" className="payment-name">
-                                                                <ul>
+                                                                {/* <ul>
                                                                     <li className="visa"><input id="1" type="radio" name="size" value="30" />
                                                                         <label htmlFor="1"><Image src={pimg} alt="" /></label>
                                                                     </li>
@@ -143,9 +144,9 @@ const DonatePage = () => {
                                                                     <li className="pay"><input id="4" type="radio" name="size" value="30" />
                                                                         <label htmlFor="4"><Image src={pimg4} alt="" /></label>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> */}
                                                                 <div className="contact-form form-style">
-                                                                    <div className="row">
+                                                                    {/* <div className="row">
                                                                         <div className="col-lg-6 col-md-12 col-12">
                                                                             <label>Card holder Name</label>
                                                                             <input type="text" placeholder="" name="name" />
@@ -162,22 +163,21 @@ const DonatePage = () => {
                                                                             <label>Expire Date</label>
                                                                             <input type="text" placeholder="" name="date" />
                                                                         </div>
-                                                                    </div>
+                                                                    </div> */}
+                                                                    <a href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' /></a>
+
                                                                 </div>
                                                             </div>
                                                         </div> : (
-                                                                <div className='wpo-doanation-payment'>
-                                                                    <p>Thank you for your interest to donate to our cause and help someone out there. Kindly visit our offices at the address below to make a cash donation.</p>
-                                                                    <h2 className='p-12'>20 Ray Amm Road, Eastlea, Harare or call us on +263 8677008143</h2>
+                                                            <div className='wpo-doanation-payment'>
+                                                                <p>Thank you for your interest to donate to our cause and help someone out there. Kindly visit our offices at the address below to make a cash donation.</p>
+                                                                <h2 className='p-12'>20 Ray Amm Road, Eastlea, Harare or call us on +263 8677008143</h2>
                                                             </div>
                                                         )}
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="submit-area">
-                                        <button type="submit" className="theme-btn submit-btn">Donate Now</button>
                                     </div>
                                 </form>
                             </div>
