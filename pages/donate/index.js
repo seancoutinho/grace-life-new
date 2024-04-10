@@ -10,6 +10,7 @@ import pimg3 from '/public/images/checkout/img-3.png'
 import pimg4 from '/public/images/checkout/img-4.png'
 import Image from 'next/image';
 import CryptoJS from 'crypto-js';
+import Link from 'next/link';
 
 const DonatePage = () => {
 
@@ -17,18 +18,16 @@ const DonatePage = () => {
     const ENCRYPTION_KEY = "eb5c85c1c7054c7ebbd4af549adb74c9"
     const SECRET_KEY = "gracelife2024"
 
-    const [online, setOnline] = useState(false);
+    const [online, setOnline] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const [formData, setFormData] = useState({
-        payload: {
-            "amountDetails": {
-                "amount": 10,
-                "currencyCode": "USD"
-            },
-            "reasonForPayment": "Just a donation",
-            "resultUrl": "https://my.gracelifefoundation.com/donate",
-            "returnUrl": "https://gracelifefoundation.com/donate/thank-you",
-        }
+        firstName: '',
+        lastName: '',
+        amount: '',
+        email: '',
+        phone: '',
+        message: ''
     });
 
     const handleChange = (e) => {
@@ -41,32 +40,29 @@ const DonatePage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Encrypt the JSON data
-        const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(formData), SECRET_KEY).toString();
-
+        setLoading(true);
         try {
-            const response = await fetch('https://api.pesepay.com/api/payments-engine/v1/payments/initiate', {
+            const response = await fetch('https://gracelife-admin-api.onrender.com/api/users/add-donar', {
                 method: 'POST',
                 headers: {
-                    'Authorization': INTERGRATION_KEY,
                     'Content-Type': 'application/json'
                 },
-                body: encryptedData // Send the encrypted data
+                body: JSON.stringify(formData)
             });
 
             if (response.ok) {
-                const responseData = await response.json();
-                console.log('Payment successful:', responseData);
-                // Redirect user to the appropriate page or handle success
+                // Handle successful response
+                console.log('Donation submitted successfully');
             } else {
-                console.error('Payment failed:', response.status);
-                // Handle payment failure
+                // Handle error response
+                console.error('Failed to submit donation');
             }
         } catch (error) {
-            console.error('Error making payment:', error);
-            // Handle error making payment
+            // Handle network error
+            console.error('Network error:', error);
         }
+
+
     };
 
 
@@ -82,7 +78,7 @@ const DonatePage = () => {
                                 <h2>Make a Donation</h2>
                             </div>
                             <div id="Donations" className="tab-pane">
-                                <form onSubmit={handleSubmit}>
+                                <form>
                                     <div className="wpo-donations-amount">
                                         <h2>Your Donation</h2>
                                         <input type="number" className="form-control" name="amount" id="amount" onChange={handleChange} placeholder="Enter Donation Amount" />
@@ -91,23 +87,23 @@ const DonatePage = () => {
                                         <h2>Details</h2>
                                         <div className="row">
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                <input type="text" className="form-control" name="firstName" id="firstName" placeholder="First Name" />
+                                                <input type="text" className="form-control" name="firstName" id="firstName" placeholder="First Name" onChange={handleChange} />
                                             </div>
 
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                <input type="text" className="form-control" name="lastName" id="lastName" placeholder="Last Name" />
+                                                <input type="text" className="form-control" name="lastName" id="lastName" placeholder="Last Name" onChange={handleChange} />
                                             </div>
 
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
-                                                <input type="email" className="form-control" name="email" id="email" placeholder="Email" />
+                                                <input type="email" className="form-control" name="email" id="email" placeholder="Email" onChange={handleChange} />
                                             </div>
 
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                <input type="text" className="form-control" name="phone" id="phone" placeholder="Phone Number" />
+                                                <input type="text" className="form-control" name="phone" id="phone" placeholder="Phone Number" onChange={handleChange} />
                                             </div>
 
                                             <div className="col-lg-12 col-12 form-group">
-                                                <textarea className="form-control" name="message" id="message" placeholder="Tell us more about your donation "></textarea>
+                                                <textarea className="form-control" name="message" id="message" placeholder="Tell us more about your donation" onChange={handleChange}></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -164,7 +160,7 @@ const DonatePage = () => {
                                                                             <input type="text" placeholder="" name="date" />
                                                                         </div>
                                                                     </div> */}
-                                                                    <a href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' /></a>
+                                                                    <Link href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' onClick={handleSubmit} /></Link>
 
                                                                 </div>
                                                             </div>
