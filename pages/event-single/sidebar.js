@@ -28,7 +28,7 @@ const EventSidebar = (props) => {
                 <div className="widget recent-post-widget">
                     <h3>Related Posts</h3>
                     <div className="posts">
-                        {Events.slice(0, 3).map((event, eitem) => (
+                        {Events.slice(0, 5).map((event, eitem) => (
                             <div className="post" key={eitem}>
                                 <div className="img-holder">
                                     <Image src={event.eImg} alt="" />

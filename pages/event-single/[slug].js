@@ -40,13 +40,13 @@ const TeamSinglePage = (props) => {
                                     <h2>{eventDetails?.fullDec.title3}</h2>
                                     <p>{eventDetails?.fullDec.description3}</p>
                                     <h2>{eventDetails?.fullDec.title4}</h2>
-                                    <p>{eventDetails?.fullDec.description4} <a target="_blank" href='https://bit.ly/GLFCancerRun' rel="noopener noreferrer">APPLY FOR THE CANCER RUN</a></p>
+                                    <p>{eventDetails?.fullDec.description4}</p>
                                     <h2>{eventDetails?.fullDec.title5}</h2>
                                     <p>{eventDetails?.fullDec.description5}</p>
                                     <h2>{eventDetails?.fullDec.title6}</h2>
                                     <p>{eventDetails?.fullDec.description6}</p>
                                 </div>
-                                <EventTabs />
+                                {/* <EventTabs /> */}
                             </div>
                         </div>
                         <EventSidebar/>

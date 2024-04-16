@@ -23,7 +23,7 @@ const EventSection2 = (props) => {
                 <div className="wpo-event-wrap">
                     <div className="row justify-content-center">
                         <div className="col col-lg-10">
-                            {Events.slice(0,3).map((event, eitem)=>(
+                            {Events.slice(0,5).map((event, eitem)=>(
                                 <div className="wpo-event-single" key={eitem}>
                                     <div className="wpo-event-item">
                                         <div className="wpo-event-img">
