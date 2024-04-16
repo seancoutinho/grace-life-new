@@ -79,11 +79,11 @@ const DonatePage = () => {
                             </div>
                             <div id="Donations" className="tab-pane">
                                 <form>
-                                    <div className="wpo-donations-amount">
+                                    {/* <div className="wpo-donations-amount">
                                         <h2>Your Donation</h2>
                                         <input type="number" className="form-control" name="amount" id="amount" onChange={handleChange} placeholder="Enter Donation Amount" />
-                                    </div>
-                                    <div className="wpo-donations-details">
+                                    </div> */}
+                                    {/* <div className="wpo-donations-details">
                                         <h2>Details</h2>
                                         <div className="row">
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
@@ -106,7 +106,7 @@ const DonatePage = () => {
                                                 <textarea className="form-control" name="message" id="message" placeholder="Tell us more about your donation" onChange={handleChange}></textarea>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="wpo-doanation-payment">
                                         <h2>Choose Your Payment Method</h2>
                                         <div className="wpo-payment-area">
@@ -160,7 +160,7 @@ const DonatePage = () => {
                                                                             <input type="text" placeholder="" name="date" />
                                                                         </div>
                                                                     </div> */}
-                                                                    <a href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' /></a>
+                                                                    <a className='btn' href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' /></a>
 
                                                                 </div>
                                                             </div>
