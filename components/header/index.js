@@ -63,11 +63,13 @@ export default class Header extends Component {
                                             </li>
                                             <li className="menu-item-has-children">
                                                 <Link href="/event-s2">Events</Link>
-                                                <ul className='sub-menu'>
-                                                    <li><Link onClick={ClickHandler} href="/event-single/cancer-run">2023 Cancer Run</Link></li>
-                                                    <li><Link onClick={ClickHandler} href="/event-single/gbv-awareness">16 Days Against Gender Based Violence</Link></li>
-                                                    <li><Link onClick={ClickHandler} href="/event-single/international-aids-day">World AIDS Day</Link></li>
-                                                </ul>
+                                                {/* <ul className='sub-menu'>
+                                                    <li><Link onClick={ClickHandler} href="/event-single/fundraising-dinner-2024">2024 Fundraising Dinner</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/event-single/african-child-day">Day of The African Child 2024</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/event-single/gombekombe-chigwida-labour-ward">Gombekombe and Chigwida Labor Wards</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/event-single/blanket-drive">Blanket Drive</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/event-single/gracelife-marathon">GLF Marathon</Link></li>
+                                                </ul> */}
                                             </li>
                                             <li className="menu-item-has-children">
                                                 <Link onClick={ClickHandler} href="/blog">Blogs</Link>
