@@ -111,7 +111,7 @@ const blogs = [
         authorTitle: 'manager',
         authorImg: blogAvaterImg4,
         create_at: '26 MAR 24',
-        blogSingleImg: blogSingleImg5,
+        blogSingleImg: blogSingleImg4,
         comment: '80',
         facebook: "https://www.facebook.com/chasi235",
         instagram: "https://www.instagram.com/zimbo_chazz/",
