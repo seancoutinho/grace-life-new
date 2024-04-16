@@ -160,13 +160,14 @@ const DonatePage = () => {
                                                                             <input type="text" placeholder="" name="date" />
                                                                         </div>
                                                                     </div> */}
-                                                                    <Link href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' onClick={handleSubmit} /></Link>
+                                                                    <a href='https://www.paynow.co.zw/Payment/Link/?q=c2VhcmNoPXNlYW4lNDByYXlzdW5jYXBpdGFsLmNvbSZhbW91bnQ9MC4wMCZyZWZlcmVuY2U9QStnZW50bGUrZG9uYXRpb24rdG8rdGhlK0dMRitjYXVzZSZsPTA%3d' target='_blank'><img src='https://www.paynow.co.zw/Content/Buttons/Medium_buttons/button_donate_medium.png' /></a>
 
                                                                 </div>
                                                             </div>
                                                         </div> : (
                                                             <div className='wpo-doanation-payment'>
-                                                                <p>Thank you for your interest to donate to our cause and help someone out there. Kindly visit our offices at the address below to make a cash donation.</p>
+                                                                <p>Thank you for your interest to donate to our cause and help someone out there. Kindly visit our offices at the address below or call us for assistance to make a cash donation.</p>
+                                                                <br />
                                                                 <h2 className='p-12'>20 Ray Amm Road, Eastlea, Harare or call us on +263 8677008143</h2>
                                                             </div>
                                                         )}
