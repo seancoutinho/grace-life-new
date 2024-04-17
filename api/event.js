@@ -13,7 +13,7 @@ const Events = [
     {
         id: '0',
         eImg: eimg4,
-        date: "15 June, 2024",
+        date: "07 June, 2024",
         eTitle: 'Fundraising Cocktail Event',
         slug: 'fundraising-cocktail-event-2024',
         dec: 'Join us for an evening of inspiration and generosity at our Fundraising Cocktail Event in June. Together, we can make a difference by supporting our initiatives to improve lives and empower communities.',
