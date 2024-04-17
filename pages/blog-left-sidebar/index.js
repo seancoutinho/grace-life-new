@@ -6,7 +6,7 @@ import Footer from '../../components/footer';
 import Scrollbar from '../../components/scrollbar'
 import Logo from '/public/images/logo.png'
 
-const BlogSingle = (props) => {
+const BlogSingle = () => {
     return (
         <Fragment>
             <Navbar Logo={Logo}/>

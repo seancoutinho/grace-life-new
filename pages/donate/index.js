@@ -75,7 +75,7 @@ const DonatePage = () => {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="wpo-donate-header">
-                                <h2>Make a Donation</h2>
+                                <h2>Make a Donation Today</h2>
                             </div>
                             <div id="Donations" className="tab-pane">
                                 <form>

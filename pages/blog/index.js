@@ -40,7 +40,7 @@ const BlogSingle = (props) => {
 
             <Fragment>
                 <Navbar Logo={Logo} />
-                <PageTitle pageTitle={'Latest News'} pagesub={'Blog'} />
+                <PageTitle pageTitle={'Blogs'} pagesub={'Blog'} />
                 <BlogList />
                 <Footer />
                 <Scrollbar />

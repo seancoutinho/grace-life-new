@@ -21,7 +21,7 @@ const submitHandler = (e) => {
 }
 
 
-const BlogSingle = (props) => {
+const BlogSingle = () => {
     const router = useRouter()
 
     const BlogDetails = blogs.find(item => item.slug === router.query.slug)
