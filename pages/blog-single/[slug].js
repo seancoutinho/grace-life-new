@@ -104,9 +104,10 @@ const BlogSingle = (props) => {
                                         <p>{BlogDetails?.aboutAuthor}</p>
                                         <div className="socials">
                                             <ul className="social-link">
-                                                <li><Link href={BlogDetails?.facebook}><i className="ti-facebook"></i></Link></li>
-                                                <li><Link href={BlogDetails?.twitter}><i className="ti-twitter-alt"></i></Link></li>
-                                                <li><Link href={BlogDetails?.instagram}><i className="ti-instagram"></i></Link></li>
+                                                <li><Link href="/"><i className="ti-facebook"></i></Link></li>
+                                                <li><Link href="/"><i className="ti-twitter-alt"></i></Link></li>
+                                                <li><Link href="/"><i className="ti-linkedin"></i></Link></li>
+                                                <li><Link href="/"><i className="ti-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>

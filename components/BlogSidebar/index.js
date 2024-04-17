@@ -32,9 +32,9 @@ const BlogSidebar = (props) => {
                     <p>{BlogDetails?.authorDescription}</p>
                     <div className="social">
                         <ul className="clearfix">
-                            <li><Link href={BlogDetails?.facebook}><i className="ti-facebook"></i></Link></li>
-                            <li><Link href={BlogDetails?.instagram}><i className="ti-instagram"></i></Link></li>
-                            <li><Link href={BlogDetails?.twitter}><i className="ti-twitter"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-facebook"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-twitter-alt"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href="/blog/#"><i className="ti-linkedin"></i></Link></li>
                         </ul>
                     </div>
                     <div className="aw-shape">
