@@ -22,8 +22,8 @@ const EventSection = (props) => {
                 </div>
                 <div className="wpo-event-wrap">
                     <div className="row">
-                        {Events.slice(0,3).map((event, eitem)=>(
-                            <div className="col col-lg-4 col-md-6 col-12" key={eitem}>
+                        {Events.slice(0,5).map((event, eitem)=>(
+                            <div className="col col-lg-4 col-md-3 col-12" key={eitem}>
                                 <div className="wpo-event-single">
                                     <div className="wpo-event-item">
                                         <div className="wpo-event-img">

@@ -9,7 +9,6 @@ import eimg8 from '/public/images/event/img-8.jpg'
 import eimg9 from '/public/images/event/img-9.jpg'
 
 const Events = [
-    // New Events Start Here
     {
         id: '0',
         eImg: eimg4,

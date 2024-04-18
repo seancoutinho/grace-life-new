@@ -42,10 +42,10 @@ const HomePage = () => {
             <Navbar Logo={Logo} hclass={'wpo-header-style-2'} />
             <Hero5 heroClass={'wpo-hero-section-6'} />
             <Service Fclass={'wpo-features-section-s2'} />
+            <EventSection />
             <AboutS2 />
             <CauseSection />
             <ProjectSection />
-            <EventSection />
             <BlogSection />
             <VideoSec />
             <Scrollbar />
