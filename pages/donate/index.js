@@ -117,7 +117,7 @@ const DonatePage = () => {
                                                             <ul>
                                                                 <li className="addToggle">
                                                                     <input onClick={() => setOnline(true)} id="add" type="radio" name="payment" value="30" />
-                                                                    <label htmlFor="add">Payment By Card</label>
+                                                                    <label htmlFor="add">Pay with Card/Mobile Money</label>
                                                                 </li>
                                                                 <li className="removeToggle">
                                                                     <input onClick={() => setOnline(false)} id="remove" type="radio" name="payment" value="30" />
