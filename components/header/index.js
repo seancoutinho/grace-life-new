@@ -119,7 +119,7 @@ export default class Header extends Component {
                                 <div className="col-lg-3 col-md-2 col-2">
                                     <div className="header-right">
                                         <div className="close-form">
-                                            <Link onClick={ClickHandler} className="theme-btn" href="/donate">Donate Now</Link>
+                                            <Link onClick={ClickHandler} className="theme-btn" href="/donate">DONATE 🕊️</Link>
                                         </div>
 
                                     </div>
