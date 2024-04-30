@@ -582,16 +582,16 @@
 	background-size: cover;
 
 	@media(max-width:1400px){
-		height: 400px;
+		height: 900px;
 		border-bottom: 1px solid #ebebeb;
 	}
 
 	@media(max-width:991px){
-		height: 500px;
+		height: 900px;
 		border-bottom: 0;
 	}
 	@media(max-width:767px){
-		height:450px;
+		height:900px;
 	}
 
 	&::before{

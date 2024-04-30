@@ -40,7 +40,7 @@ const HomePage = () => {
                 </Head>
             </Head>
             <Navbar Logo={Logo} hclass={'wpo-header-style-2'} />
-            <Hero5 heroClass={'wpo-hero-section-6'} />
+            <Hero4 heroClass={'wpo-hero-section-6'} />
             <Service Fclass={'wpo-features-section-s2'} />
             <EventSection />
             <AboutS2 />
