@@ -21,10 +21,10 @@ const Hero3 =() => {
                     <div className="col col-xs-6 col-lg-6">
                         <div className="wpo-hero-section-text">
                             <div className="wpo-hero-title">
-                                <h2>Let’s Save An <span>Animal</span> Life</h2>
+                                <h2>We are dedicated to Make A Difference across <span>Zimbabwe</span> and Africa</h2>
                             </div>
                             <div className="wpo-hero-subtitle">
-                                <p>We help local nonprofits access the funding, and support they need to become more.</p>
+                                <p>Through our programs we are dedicated to provide sustainable change in the livelihoods of beneficiaries in the African continent</p>
                             </div>
                             <div className="btns">
                                 <Link onClick={ClickHandler} href="/about" className="btn theme-btn">Get Started</Link>
