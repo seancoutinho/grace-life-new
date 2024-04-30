@@ -62,11 +62,16 @@ const menus = [
         id: 6,
         title: 'Who We Are ',
         link: '/about',
-},
-{
-    id: 88,
+    },
+    {
+        id: 7,
         title: 'Contact Us',
-            link: '/contact',
+        link: '/contact',
+    },
+    {
+        id: 8,
+        title: 'Donate 🕊️',
+        link: '/donate',
     }
 
 
