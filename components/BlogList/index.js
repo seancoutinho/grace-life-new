@@ -20,7 +20,7 @@ const BlogList = (props) => {
                 <div className="row">
                     <div className={`col col-lg-8 col-12 ${props.blRight}`}>
                         <div className="wpo-blog-content">
-                            {blogs.slice(0,5).map((blog, bitem) => (
+                            {blogs.slice(0,6).map((blog, bitem) => (
                                 <div className={`post  ${blog.blClass}`}key={bitem}>
                                     <div className="entry-media video-holder">
                                         <Image src={blog.blogSingleImg} alt=""/>
