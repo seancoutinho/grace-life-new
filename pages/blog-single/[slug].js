@@ -104,10 +104,10 @@ const BlogSingle = (props) => {
                                         <p>{BlogDetails?.aboutAuthor}</p>
                                         <div className="socials">
                                             <ul className="social-link">
-                                                <li><Link href="/"><i className="ti-facebook"></i></Link></li>
-                                                <li><Link href="/"><i className="ti-twitter-alt"></i></Link></li>
-                                                <li><Link href="/"><i className="ti-linkedin"></i></Link></li>
-                                                <li><Link href="/"><i className="ti-instagram"></i></Link></li>
+                                                <li><Link href="https://www.facebook.com/chasi235"><i className="ti-facebook"></i></Link></li>
+                                                <li><Link href="https://twitter.com/chasi235"><i className="ti-twitter-alt"></i></Link></li>
+                                                <li><Link href="https://www.linkedin.com/in/tinokundachasara/"><i className="ti-linkedin"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/zimbo_chazz/"><i className="ti-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
